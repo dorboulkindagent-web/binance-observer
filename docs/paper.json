@@ -53,9 +53,9 @@
     }
   },
   "closed": [],
-  "equity": 10000.0,
-  "return_pct": 0.0,
+  "equity": 10004.23,
+  "return_pct": 0.04,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-19T20:29:31.289259+00:00"
+  "updated_at": "2026-09-19T20:31:54.532902+00:00"
 }
