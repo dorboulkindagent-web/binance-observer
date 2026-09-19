@@ -55,6 +55,28 @@ def fundamentals():
     out[sym]={"name":x.get("name"),"rank":x.get("rank"),"market_cap":q.get("market_cap"),"volume_24h_usd":q.get("volume_24h"),"percent_change_24h":q.get("percent_change_24h"),"percent_change_7d":q.get("percent_change_7d"),"circulating_supply":x.get("circulating_supply"),"total_supply":x.get("total_supply"),"max_supply":x.get("max_supply"),"source":"CoinPaprika"}
   return out
  except Exception:return {}
+def horizon_performance(history_path,current,now_ms):
+ try: lines=history_path.read_text().splitlines()
+ except FileNotFoundError:return {}
+ snaps=[]
+ for line in lines[-1008:]:
+  try:snaps.append(json.loads(line))
+  except Exception:pass
+ current_prices={x["symbol"]:x["price"] for x in current}
+ horizons={"1h":3600,"4h":14400,"24h":86400};out={}
+ for label,secs in horizons.items():
+  vals=[]
+  for snap in snaps:
+   try:age=(now_ms-dt.datetime.fromisoformat(snap["updated_at"]).timestamp()*1000)/1000
+   except Exception:continue
+   if age<secs*.85 or age>secs*1.5:continue
+   for a in snap.get("alerts",[]):
+    if a.get("symbol") in current_prices and a.get("price"):
+     move=(current_prices[a["symbol"]]/a["price"]-1)*100
+     fav=move>0 if a.get("kind")=="BREAKOUT_SETUP" else move<0
+     vals.append(fav)
+  out[label]={"samples":len(vals),"favorable_rate":round(sum(vals)/len(vals)*100,1) if vals else None}
+ return out
 def forward_outcomes(history_path, current):
  try: lines=history_path.read_text().splitlines()
  except FileNotFoundError: return {}
@@ -110,7 +132,8 @@ def main():
  out.sort(key=lambda x:(x["score"],x["quote_volume_24h"]),reverse=True)
  stamp=dt.datetime.now(dt.timezone.utc).isoformat()
  performance=forward_outcomes(Path("docs/alerts-history.jsonl"),out)
- snap={"updated_at":stamp,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","universe_count":len(syms),"analyzed_count":len(out),"candidate_limit":120,"interval":"15m","errors":errors,"performance":performance,"alerts":[x for x in out if x["score"]>=55][:40],"leaders":out[:80]}
+ horizon_stats=horizon_performance(Path("docs/alerts-history.jsonl"),out,int(time.time()*1000))
+ snap={"updated_at":stamp,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","universe_count":len(syms),"analyzed_count":len(out),"candidate_limit":120,"interval":"15m","errors":errors,"performance":performance,"horizon_performance":horizon_stats,"alerts":[x for x in out if x["score"]>=55][:40],"leaders":out[:80]}
  Path("docs").mkdir(exist_ok=True);Path("docs/scanner.json").write_text(json.dumps(snap,ensure_ascii=False,indent=2)+"\n")
  h=Path("docs/alerts-history.jsonl");old=h.read_text().splitlines() if h.exists() else [];old.append(json.dumps({"updated_at":stamp,"alerts":snap["alerts"]},ensure_ascii=False));h.write_text("\n".join(old[-1008:])+"\n")
 if __name__=="__main__":main()
