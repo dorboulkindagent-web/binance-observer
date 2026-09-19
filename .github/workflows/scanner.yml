@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scanner.py','docs/index.html','.github/workflows/scanner.yml']
+    paths: ['scanner.py','paper.py','docs/index.html','.github/workflows/scanner.yml']
   schedule:
     - cron: '3/10 * * * *'
 permissions:
@@ -14,19 +14,20 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-slim
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with: {ref: main}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: python scanner.py
+      - run: python paper.py
       - run: |
           git config user.name "binance-scanner-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/scanner.json docs/alerts-history.jsonl
+          git add docs/scanner.json docs/alerts-history.jsonl docs/paper.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update market scan"
+            git commit -m "Update market scan and paper portfolio"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
