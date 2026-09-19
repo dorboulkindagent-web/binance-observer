@@ -2,7 +2,7 @@
 import json, math, time, urllib.request, urllib.parse, datetime as dt
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-BASE="https://data-api.binance.vision"; QUOTES=("USDT",); STABLE={"USDCUSDT","FDUSDUSDT","TUSDUSDT","USDPUSDT","DAIUSDT"}
+BASE="https://data-api.binance.vision"; PAPRIKA="https://api.coinpaprika.com/v1"; QUOTES=("USDT",); STABLE={"USDCUSDT","FDUSDUSDT","TUSDUSDT","USDPUSDT","DAIUSDT"}
 def get(path,params=None):
  u=BASE+path+("?" + urllib.parse.urlencode(params) if params else "")
  req=urllib.request.Request(u,headers={"User-Agent":"BinanceMarketScanner/2.0","Accept":"application/json"})
@@ -44,8 +44,19 @@ def analyze(symbol,rows,quote_vol):
  if p<lo:bear+=20;why.append("שבירה")
  score=max(bull,bear); kind="BREAKOUT_SETUP" if bull>=bear else "BREAKDOWN_RISK"
  return {"symbol":symbol,"price":p,"score":min(score,100),"kind":kind,"rsi":round(rv,1),"ema9":round(e9,8),"ema21":round(e21,8),"atr_pct":round(ap,2),"volume_ratio":round(vd,2),"resistance":hi,"support":lo,"distance_resistance_pct":round(up,2),"distance_support_pct":round(down,2),"quote_volume_24h":round(quote_vol,2),"candle_close":int(rows[-1][6]),"reasons":why}
+def fundamentals():
+ try:
+  req=urllib.request.Request(PAPRIKA+"/tickers",headers={"User-Agent":"BinanceMarketScanner/2.1","Accept":"application/json"})
+  with urllib.request.urlopen(req,timeout=25) as r: items=json.load(r)
+  out={}
+  for x in items:
+   sym=str(x.get("symbol","")).upper();q=x.get("quotes",{}).get("USD",{})
+   if sym and sym not in out:
+    out[sym]={"name":x.get("name"),"rank":x.get("rank"),"market_cap":q.get("market_cap"),"volume_24h_usd":q.get("volume_24h"),"percent_change_24h":q.get("percent_change_24h"),"percent_change_7d":q.get("percent_change_7d"),"circulating_supply":x.get("circulating_supply"),"total_supply":x.get("total_supply"),"max_supply":x.get("max_supply"),"source":"CoinPaprika"}
+  return out
+ except Exception:return {}
 def main():
- info=get("/api/v3/exchangeInfo"); ticks=get("/api/v3/ticker/24hr")
+ info=get("/api/v3/exchangeInfo"); ticks=get("/api/v3/ticker/24hr"); fund=fundamentals()
  tv={x["symbol"]:float(x.get("quoteVolume",0)) for x in ticks}
  syms=[x["symbol"] for x in info["symbols"] if x.get("status")=="TRADING" and x.get("quoteAsset") in QUOTES and x.get("isSpotTradingAllowed",True) and x["symbol"] not in STABLE]
  # Free-tier budget: scan all eligible symbols for liquidity, then technical candles for top 120 liquid markets.
@@ -58,7 +69,10 @@ def main():
   for future in as_completed(futures):
    try:
     a=future.result()
-    if a:out.append(a)
+    if a:
+     base=s[:-4] if s.endswith("USDT") else s
+     a["fundamental"]=fund.get(base)
+     out.append(a)
    except Exception:
     errors+=1
  out.sort(key=lambda x:(x["score"],x["quote_volume_24h"]),reverse=True)
