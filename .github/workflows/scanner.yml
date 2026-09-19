@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scanner.py','paper.py','docs/index.html','.github/workflows/scanner.yml']
+    paths: ['scanner.py','paper.py','docs/index.html','.github/workflows/scanner.yml','RUN_NOW']
   schedule:
     - cron: '7/10 * * * *'
 permissions:
