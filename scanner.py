@@ -68,9 +68,10 @@ def main():
   futures={pool.submit(scan_one,s):s for s in candidates}
   for future in as_completed(futures):
    try:
+    symbol=futures[future]
     a=future.result()
     if a:
-     base=s[:-4] if s.endswith("USDT") else s
+     base=symbol[:-4] if symbol.endswith("USDT") else symbol
      a["fundamental"]=fund.get(base)
      out.append(a)
    except Exception:
