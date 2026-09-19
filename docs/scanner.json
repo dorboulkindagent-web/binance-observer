@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T17:56:25.942110+00:00",
+  "updated_at": "2026-09-19T17:57:14.002346+00:00",
   "mode": "OBSERVE_ONLY",
   "execution": "NOT_IMPLEMENTED",
   "universe_count": 489,
@@ -9,16 +9,16 @@
   "errors": 0,
   "performance": {
     "BREAKDOWN_RISK": {
-      "count": 283,
+      "count": 316,
       "favorable": 39,
-      "avg_move_pct": 2.89,
-      "favorable_rate": 13.8
+      "avg_move_pct": 2.59,
+      "favorable_rate": 12.3
     },
     "BREAKOUT_SETUP": {
-      "count": 135,
+      "count": 142,
       "favorable": 45,
-      "avg_move_pct": 1.17,
-      "favorable_rate": 33.3
+      "avg_move_pct": 1.12,
+      "favorable_rate": 31.7
     }
   },
   "alerts": [
@@ -36,7 +36,7 @@
       "support": 2.643,
       "distance_resistance_pct": 5.23,
       "distance_support_pct": -0.92,
-      "quote_volume_24h": 13290787.33,
+      "quote_volume_24h": 13298875.8,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -69,7 +69,7 @@
       "support": 0.1015,
       "distance_resistance_pct": 6.14,
       "distance_support_pct": -0.5,
-      "quote_volume_24h": 12916045.29,
+      "quote_volume_24h": 12916988.47,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -91,7 +91,7 @@
       "support": 1.7381,
       "distance_resistance_pct": 9.19,
       "distance_support_pct": -1.58,
-      "quote_volume_24h": 11091029.82,
+      "quote_volume_24h": 11090486.18,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -124,7 +124,7 @@
       "support": 0.4325,
       "distance_resistance_pct": -1.04,
       "distance_support_pct": 11.59,
-      "quote_volume_24h": 4890292.35,
+      "quote_volume_24h": 4894266.14,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -191,7 +191,7 @@
       "support": 1.425,
       "distance_resistance_pct": 2.09,
       "distance_support_pct": -0.07,
-      "quote_volume_24h": 272640298.9,
+      "quote_volume_24h": 272665585.36,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -223,7 +223,7 @@
       "support": 0.99993,
       "distance_resistance_pct": 0.02,
       "distance_support_pct": -0.0,
-      "quote_volume_24h": 153366533.36,
+      "quote_volume_24h": 153416555.44,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -256,7 +256,7 @@
       "support": 57.47,
       "distance_resistance_pct": 1.36,
       "distance_support_pct": -0.05,
-      "quote_volume_24h": 32877067.87,
+      "quote_volume_24h": 32861009.32,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -288,7 +288,7 @@
       "support": 58.92,
       "distance_resistance_pct": 2.55,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 24472110.38,
+      "quote_volume_24h": 24507987.38,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -320,7 +320,7 @@
       "support": 1.1495,
       "distance_resistance_pct": 0.03,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 20523635.45,
+      "quote_volume_24h": 20501146.11,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -342,7 +342,7 @@
       "support": 0.758,
       "distance_resistance_pct": 1.58,
       "distance_support_pct": 0.13,
-      "quote_volume_24h": 16861744.19,
+      "quote_volume_24h": 16861666.14,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -374,7 +374,7 @@
       "support": 1.123,
       "distance_resistance_pct": 2.92,
       "distance_support_pct": 0.53,
-      "quote_volume_24h": 5361798.1,
+      "quote_volume_24h": 5359619.89,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -406,7 +406,7 @@
       "support": 0.1151,
       "distance_resistance_pct": -0.32,
       "distance_support_pct": 1.81,
-      "quote_volume_24h": 5063541.78,
+      "quote_volume_24h": 5064363.39,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -439,7 +439,7 @@
       "support": 0.01106,
       "distance_resistance_pct": 3.08,
       "distance_support_pct": -0.09,
-      "quote_volume_24h": 5048455.43,
+      "quote_volume_24h": 5043247.43,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -471,7 +471,7 @@
       "support": 0.214,
       "distance_resistance_pct": -1.97,
       "distance_support_pct": 4.38,
-      "quote_volume_24h": 54244471.57,
+      "quote_volume_24h": 54254276.23,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -504,7 +504,7 @@
       "support": 0.1214,
       "distance_resistance_pct": 4.21,
       "distance_support_pct": -0.25,
-      "quote_volume_24h": 17043603.07,
+      "quote_volume_24h": 17044109.96,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -536,7 +536,7 @@
       "support": 0.22,
       "distance_resistance_pct": 12.45,
       "distance_support_pct": -0.32,
-      "quote_volume_24h": 4063459.13,
+      "quote_volume_24h": 4063549.46,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -568,7 +568,7 @@
       "support": 3.541,
       "distance_resistance_pct": 0.0,
       "distance_support_pct": 3.46,
-      "quote_volume_24h": 193930984.86,
+      "quote_volume_24h": 193866281.95,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -600,7 +600,7 @@
       "support": 8.741,
       "distance_resistance_pct": 5.01,
       "distance_support_pct": 0.08,
-      "quote_volume_24h": 120104484.81,
+      "quote_volume_24h": 120136376.12,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -630,7 +630,7 @@
       "support": 763.1,
       "distance_resistance_pct": 1.36,
       "distance_support_pct": 0.04,
-      "quote_volume_24h": 98553318.91,
+      "quote_volume_24h": 98549683.22,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -660,7 +660,7 @@
       "support": 0.1798,
       "distance_resistance_pct": 2.0,
       "distance_support_pct": 0.28,
-      "quote_volume_24h": 16902898.3,
+      "quote_volume_24h": 16915425.95,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -690,7 +690,7 @@
       "support": 0.10633,
       "distance_resistance_pct": 6.49,
       "distance_support_pct": 0.95,
-      "quote_volume_24h": 13520978.12,
+      "quote_volume_24h": 13522676.16,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -720,7 +720,7 @@
       "support": 0.10438,
       "distance_resistance_pct": 2.07,
       "distance_support_pct": 0.39,
-      "quote_volume_24h": 12771665.32,
+      "quote_volume_24h": 12769852.49,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -750,7 +750,7 @@
       "support": 0.01975,
       "distance_resistance_pct": 7.19,
       "distance_support_pct": 0.75,
-      "quote_volume_24h": 9151695.06,
+      "quote_volume_24h": 9144694.48,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -780,7 +780,7 @@
       "support": 1776.86,
       "distance_resistance_pct": 0.28,
       "distance_support_pct": 0.06,
-      "quote_volume_24h": 8624209.91,
+      "quote_volume_24h": 8623928.94,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -801,7 +801,7 @@
       "support": 2.382,
       "distance_resistance_pct": 2.25,
       "distance_support_pct": 0.54,
-      "quote_volume_24h": 7753614.65,
+      "quote_volume_24h": 7754032.58,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -831,7 +831,7 @@
       "support": 0.2743,
       "distance_resistance_pct": 4.43,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 7227603.84,
+      "quote_volume_24h": 7228219.46,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -861,7 +861,7 @@
       "support": 1.569,
       "distance_resistance_pct": 3.48,
       "distance_support_pct": 0.63,
-      "quote_volume_24h": 6845260.9,
+      "quote_volume_24h": 6838112.21,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -891,7 +891,7 @@
       "support": 152.69,
       "distance_resistance_pct": 0.1,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 6703669.82,
+      "quote_volume_24h": 6704248.36,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -923,7 +923,7 @@
       "support": 0.6623,
       "distance_resistance_pct": 2.7,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 6641495.68,
+      "quote_volume_24h": 6641425.57,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -953,7 +953,7 @@
       "support": 2.688,
       "distance_resistance_pct": 3.11,
       "distance_support_pct": 0.63,
-      "quote_volume_24h": 6517186.23,
+      "quote_volume_24h": 6517268.44,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -983,7 +983,7 @@
       "support": 0.0584,
       "distance_resistance_pct": 2.22,
       "distance_support_pct": 0.17,
-      "quote_volume_24h": 5217388.15,
+      "quote_volume_24h": 5217789.85,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1013,7 +1013,7 @@
       "support": 4374.83,
       "distance_resistance_pct": 0.06,
       "distance_support_pct": 0.02,
-      "quote_volume_24h": 5007180.87,
+      "quote_volume_24h": 5006009.87,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1045,7 +1045,7 @@
       "support": 4364.55,
       "distance_resistance_pct": 0.16,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 4836138.91,
+      "quote_volume_24h": 4850303.11,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1077,7 +1077,7 @@
       "support": 0.008371,
       "distance_resistance_pct": 1.02,
       "distance_support_pct": 3.27,
-      "quote_volume_24h": 4823024.73,
+      "quote_volume_24h": 4823010.84,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1109,7 +1109,7 @@
       "support": 0.301,
       "distance_resistance_pct": 5.63,
       "distance_support_pct": 0.95,
-      "quote_volume_24h": 4790718.23,
+      "quote_volume_24h": 4790806.17,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1139,7 +1139,7 @@
       "support": 0.02111,
       "distance_resistance_pct": 2.02,
       "distance_support_pct": 0.66,
-      "quote_volume_24h": 4333950.34,
+      "quote_volume_24h": 4336222.96,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1169,7 +1169,7 @@
       "support": 0.3366,
       "distance_resistance_pct": 1.87,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 4092878.74,
+      "quote_volume_24h": 4091079.35,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1199,7 +1199,7 @@
       "support": 1.721,
       "distance_resistance_pct": 2.85,
       "distance_support_pct": 0.06,
-      "quote_volume_24h": 3975164.49,
+      "quote_volume_24h": 3976510.44,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1229,7 +1229,7 @@
       "support": 0.00613,
       "distance_resistance_pct": 1.24,
       "distance_support_pct": 4.67,
-      "quote_volume_24h": 3436373.01,
+      "quote_volume_24h": 3434954.41,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1263,7 +1263,7 @@
       "support": 2.643,
       "distance_resistance_pct": 5.23,
       "distance_support_pct": -0.92,
-      "quote_volume_24h": 13290787.33,
+      "quote_volume_24h": 13298875.8,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -1296,7 +1296,7 @@
       "support": 0.1015,
       "distance_resistance_pct": 6.14,
       "distance_support_pct": -0.5,
-      "quote_volume_24h": 12916045.29,
+      "quote_volume_24h": 12916988.47,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -1318,7 +1318,7 @@
       "support": 1.7381,
       "distance_resistance_pct": 9.19,
       "distance_support_pct": -1.58,
-      "quote_volume_24h": 11091029.82,
+      "quote_volume_24h": 11090486.18,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר",
@@ -1351,7 +1351,7 @@
       "support": 0.4325,
       "distance_resistance_pct": -1.04,
       "distance_support_pct": 11.59,
-      "quote_volume_24h": 4890292.35,
+      "quote_volume_24h": 4894266.14,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1418,7 +1418,7 @@
       "support": 1.425,
       "distance_resistance_pct": 2.09,
       "distance_support_pct": -0.07,
-      "quote_volume_24h": 272640298.9,
+      "quote_volume_24h": 272665585.36,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -1450,7 +1450,7 @@
       "support": 0.99993,
       "distance_resistance_pct": 0.02,
       "distance_support_pct": -0.0,
-      "quote_volume_24h": 153366533.36,
+      "quote_volume_24h": 153416555.44,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1483,7 +1483,7 @@
       "support": 57.47,
       "distance_resistance_pct": 1.36,
       "distance_support_pct": -0.05,
-      "quote_volume_24h": 32877067.87,
+      "quote_volume_24h": 32861009.32,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -1515,7 +1515,7 @@
       "support": 58.92,
       "distance_resistance_pct": 2.55,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 24472110.38,
+      "quote_volume_24h": 24507987.38,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -1547,7 +1547,7 @@
       "support": 1.1495,
       "distance_resistance_pct": 0.03,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 20523635.45,
+      "quote_volume_24h": 20501146.11,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1569,7 +1569,7 @@
       "support": 0.758,
       "distance_resistance_pct": 1.58,
       "distance_support_pct": 0.13,
-      "quote_volume_24h": 16861744.19,
+      "quote_volume_24h": 16861666.14,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -1601,7 +1601,7 @@
       "support": 1.123,
       "distance_resistance_pct": 2.92,
       "distance_support_pct": 0.53,
-      "quote_volume_24h": 5361798.1,
+      "quote_volume_24h": 5359619.89,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -1633,7 +1633,7 @@
       "support": 0.1151,
       "distance_resistance_pct": -0.32,
       "distance_support_pct": 1.81,
-      "quote_volume_24h": 5063541.78,
+      "quote_volume_24h": 5064363.39,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1666,7 +1666,7 @@
       "support": 0.01106,
       "distance_resistance_pct": 3.08,
       "distance_support_pct": -0.09,
-      "quote_volume_24h": 5048455.43,
+      "quote_volume_24h": 5043247.43,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -1698,7 +1698,7 @@
       "support": 0.214,
       "distance_resistance_pct": -1.97,
       "distance_support_pct": 4.38,
-      "quote_volume_24h": 54244471.57,
+      "quote_volume_24h": 54254276.23,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1731,7 +1731,7 @@
       "support": 0.1214,
       "distance_resistance_pct": 4.21,
       "distance_support_pct": -0.25,
-      "quote_volume_24h": 17043603.07,
+      "quote_volume_24h": 17044109.96,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -1763,7 +1763,7 @@
       "support": 0.22,
       "distance_resistance_pct": 12.45,
       "distance_support_pct": -0.32,
-      "quote_volume_24h": 4063459.13,
+      "quote_volume_24h": 4063549.46,
       "candle_close": 1789839899999,
       "reasons": [
         "שבירה"
@@ -1795,7 +1795,7 @@
       "support": 3.541,
       "distance_resistance_pct": 0.0,
       "distance_support_pct": 3.46,
-      "quote_volume_24h": 193930984.86,
+      "quote_volume_24h": 193866281.95,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1827,7 +1827,7 @@
       "support": 8.741,
       "distance_resistance_pct": 5.01,
       "distance_support_pct": 0.08,
-      "quote_volume_24h": 120104484.81,
+      "quote_volume_24h": 120136376.12,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1857,7 +1857,7 @@
       "support": 763.1,
       "distance_resistance_pct": 1.36,
       "distance_support_pct": 0.04,
-      "quote_volume_24h": 98553318.91,
+      "quote_volume_24h": 98549683.22,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1887,7 +1887,7 @@
       "support": 0.1798,
       "distance_resistance_pct": 2.0,
       "distance_support_pct": 0.28,
-      "quote_volume_24h": 16902898.3,
+      "quote_volume_24h": 16915425.95,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1917,7 +1917,7 @@
       "support": 0.10633,
       "distance_resistance_pct": 6.49,
       "distance_support_pct": 0.95,
-      "quote_volume_24h": 13520978.12,
+      "quote_volume_24h": 13522676.16,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1947,7 +1947,7 @@
       "support": 0.10438,
       "distance_resistance_pct": 2.07,
       "distance_support_pct": 0.39,
-      "quote_volume_24h": 12771665.32,
+      "quote_volume_24h": 12769852.49,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -1977,7 +1977,7 @@
       "support": 0.01975,
       "distance_resistance_pct": 7.19,
       "distance_support_pct": 0.75,
-      "quote_volume_24h": 9151695.06,
+      "quote_volume_24h": 9144694.48,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2007,7 +2007,7 @@
       "support": 1776.86,
       "distance_resistance_pct": 0.28,
       "distance_support_pct": 0.06,
-      "quote_volume_24h": 8624209.91,
+      "quote_volume_24h": 8623928.94,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2028,7 +2028,7 @@
       "support": 2.382,
       "distance_resistance_pct": 2.25,
       "distance_support_pct": 0.54,
-      "quote_volume_24h": 7753614.65,
+      "quote_volume_24h": 7754032.58,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2058,7 +2058,7 @@
       "support": 0.2743,
       "distance_resistance_pct": 4.43,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 7227603.84,
+      "quote_volume_24h": 7228219.46,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2088,7 +2088,7 @@
       "support": 1.569,
       "distance_resistance_pct": 3.48,
       "distance_support_pct": 0.63,
-      "quote_volume_24h": 6845260.9,
+      "quote_volume_24h": 6838112.21,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2118,7 +2118,7 @@
       "support": 152.69,
       "distance_resistance_pct": 0.1,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 6703669.82,
+      "quote_volume_24h": 6704248.36,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2150,7 +2150,7 @@
       "support": 0.6623,
       "distance_resistance_pct": 2.7,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 6641495.68,
+      "quote_volume_24h": 6641425.57,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2180,7 +2180,7 @@
       "support": 2.688,
       "distance_resistance_pct": 3.11,
       "distance_support_pct": 0.63,
-      "quote_volume_24h": 6517186.23,
+      "quote_volume_24h": 6517268.44,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2210,7 +2210,7 @@
       "support": 0.0584,
       "distance_resistance_pct": 2.22,
       "distance_support_pct": 0.17,
-      "quote_volume_24h": 5217388.15,
+      "quote_volume_24h": 5217789.85,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2240,7 +2240,7 @@
       "support": 4374.83,
       "distance_resistance_pct": 0.06,
       "distance_support_pct": 0.02,
-      "quote_volume_24h": 5007180.87,
+      "quote_volume_24h": 5006009.87,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2272,7 +2272,7 @@
       "support": 4364.55,
       "distance_resistance_pct": 0.16,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 4836138.91,
+      "quote_volume_24h": 4850303.11,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2304,7 +2304,7 @@
       "support": 0.008371,
       "distance_resistance_pct": 1.02,
       "distance_support_pct": 3.27,
-      "quote_volume_24h": 4823024.73,
+      "quote_volume_24h": 4823010.84,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2336,7 +2336,7 @@
       "support": 0.301,
       "distance_resistance_pct": 5.63,
       "distance_support_pct": 0.95,
-      "quote_volume_24h": 4790718.23,
+      "quote_volume_24h": 4790806.17,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2366,7 +2366,7 @@
       "support": 0.02111,
       "distance_resistance_pct": 2.02,
       "distance_support_pct": 0.66,
-      "quote_volume_24h": 4333950.34,
+      "quote_volume_24h": 4336222.96,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2396,7 +2396,7 @@
       "support": 0.3366,
       "distance_resistance_pct": 1.87,
       "distance_support_pct": 0.36,
-      "quote_volume_24h": 4092878.74,
+      "quote_volume_24h": 4091079.35,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2426,7 +2426,7 @@
       "support": 1.721,
       "distance_resistance_pct": 2.85,
       "distance_support_pct": 0.06,
-      "quote_volume_24h": 3975164.49,
+      "quote_volume_24h": 3976510.44,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2456,7 +2456,7 @@
       "support": 0.00613,
       "distance_resistance_pct": 1.24,
       "distance_support_pct": 4.67,
-      "quote_volume_24h": 3436373.01,
+      "quote_volume_24h": 3434954.41,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2488,7 +2488,7 @@
       "support": 1005.64,
       "distance_resistance_pct": 0.25,
       "distance_support_pct": 0.0,
-      "quote_volume_24h": 2948951.73,
+      "quote_volume_24h": 2948835.82,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2509,7 +2509,7 @@
       "support": 81183.28,
       "distance_resistance_pct": 0.56,
       "distance_support_pct": 0.39,
-      "quote_volume_24h": 980613874.51,
+      "quote_volume_24h": 980510035.13,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2541,7 +2541,7 @@
       "support": 2629.16,
       "distance_resistance_pct": 0.78,
       "distance_support_pct": 0.68,
-      "quote_volume_24h": 709301833.06,
+      "quote_volume_24h": 709220227.8,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2573,7 +2573,7 @@
       "support": 111.23,
       "distance_resistance_pct": 0.78,
       "distance_support_pct": 0.32,
-      "quote_volume_24h": 257393237.8,
+      "quote_volume_24h": 257415059.68,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2605,7 +2605,7 @@
       "support": 0.0294,
       "distance_resistance_pct": 1.31,
       "distance_support_pct": 23.24,
-      "quote_volume_24h": 114116937.75,
+      "quote_volume_24h": 114136571.88,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2637,7 +2637,7 @@
       "support": 4.264,
       "distance_resistance_pct": 14.48,
       "distance_support_pct": 1.36,
-      "quote_volume_24h": 49678857.68,
+      "quote_volume_24h": 49664531.81,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2667,7 +2667,7 @@
       "support": 761.8,
       "distance_resistance_pct": 0.01,
       "distance_support_pct": 0.15,
-      "quote_volume_24h": 45272184.31,
+      "quote_volume_24h": 45263589.42,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2720,7 +2720,7 @@
       "support": 0.9728,
       "distance_resistance_pct": 0.77,
       "distance_support_pct": 10.31,
-      "quote_volume_24h": 32523740.71,
+      "quote_volume_24h": 32765167.84,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2752,7 +2752,7 @@
       "support": 0.3377,
       "distance_resistance_pct": 0.24,
       "distance_support_pct": 0.35,
-      "quote_volume_24h": 26559484.65,
+      "quote_volume_24h": 26544804.6,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2784,7 +2784,7 @@
       "support": 1.0,
       "distance_resistance_pct": 0.03,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 23295311.84,
+      "quote_volume_24h": 23289945.67,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2816,7 +2816,7 @@
       "support": 0.02482,
       "distance_resistance_pct": 6.84,
       "distance_support_pct": 1.94,
-      "quote_volume_24h": 13812870.81,
+      "quote_volume_24h": 13800870.78,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2846,7 +2846,7 @@
       "support": 7.728,
       "distance_resistance_pct": 4.18,
       "distance_support_pct": 0.72,
-      "quote_volume_24h": 13805682.67,
+      "quote_volume_24h": 13795203.91,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2876,7 +2876,7 @@
       "support": 0.08045,
       "distance_resistance_pct": 0.72,
       "distance_support_pct": 1.49,
-      "quote_volume_24h": 13166771.0,
+      "quote_volume_24h": 13163464.59,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2908,7 +2908,7 @@
       "support": 91.68,
       "distance_resistance_pct": 0.64,
       "distance_support_pct": 0.4,
-      "quote_volume_24h": 11076696.33,
+      "quote_volume_24h": 11074991.85,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2929,7 +2929,7 @@
       "support": 0.1532,
       "distance_resistance_pct": 11.2,
       "distance_support_pct": 0.84,
-      "quote_volume_24h": 9858057.59,
+      "quote_volume_24h": 9858085.45,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2959,7 +2959,7 @@
       "support": 0.04315,
       "distance_resistance_pct": 3.75,
       "distance_support_pct": 0.62,
-      "quote_volume_24h": 4964648.34,
+      "quote_volume_24h": 4961856.42,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -2989,7 +2989,7 @@
       "support": 221.82,
       "distance_resistance_pct": 0.07,
       "distance_support_pct": 0.14,
-      "quote_volume_24h": 3983704.54,
+      "quote_volume_24h": 3988771.93,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3010,7 +3010,7 @@
       "support": 0.1466,
       "distance_resistance_pct": 2.17,
       "distance_support_pct": 0.48,
-      "quote_volume_24h": 3967601.24,
+      "quote_volume_24h": 3967731.09,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3040,7 +3040,7 @@
       "support": 0.1044,
       "distance_resistance_pct": 7.74,
       "distance_support_pct": 0.19,
-      "quote_volume_24h": 2737396.03,
+      "quote_volume_24h": 2738649.99,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3070,7 +3070,7 @@
       "support": 264.1,
       "distance_resistance_pct": 3.4,
       "distance_support_pct": 0.19,
-      "quote_volume_24h": 48299123.58,
+      "quote_volume_24h": 48263691.67,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3100,7 +3100,7 @@
       "support": 0.728,
       "distance_resistance_pct": 2.46,
       "distance_support_pct": 0.55,
-      "quote_volume_24h": 34539532.18,
+      "quote_volume_24h": 34538744.12,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3130,7 +3130,7 @@
       "support": 2.041,
       "distance_resistance_pct": 2.61,
       "distance_support_pct": 4.8,
-      "quote_volume_24h": 25681685.56,
+      "quote_volume_24h": 25675407.33,
       "candle_close": 1789839899999,
       "reasons": [
         "נפח מוגבר"
@@ -3162,7 +3162,7 @@
       "support": 1.117,
       "distance_resistance_pct": 1.42,
       "distance_support_pct": 0.89,
-      "quote_volume_24h": 11594150.14,
+      "quote_volume_24h": 11591716.42,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3192,7 +3192,7 @@
       "support": 0.4121,
       "distance_resistance_pct": 1.54,
       "distance_support_pct": 0.91,
-      "quote_volume_24h": 5312155.72,
+      "quote_volume_24h": 5313962.7,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3222,7 +3222,7 @@
       "support": 0.04894,
       "distance_resistance_pct": 1.33,
       "distance_support_pct": 0.18,
-      "quote_volume_24h": 5032119.52,
+      "quote_volume_24h": 5034248.76,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3252,7 +3252,7 @@
       "support": 0.67,
       "distance_resistance_pct": 1.24,
       "distance_support_pct": 0.77,
-      "quote_volume_24h": 3682607.84,
+      "quote_volume_24h": 3682684.6,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3282,7 +3282,7 @@
       "support": 0.2356,
       "distance_resistance_pct": 2.58,
       "distance_support_pct": 0.3,
-      "quote_volume_24h": 3302023.89,
+      "quote_volume_24h": 3298987.3,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3312,7 +3312,7 @@
       "support": 0.8378,
       "distance_resistance_pct": 1.54,
       "distance_support_pct": 2.25,
-      "quote_volume_24h": 98834280.84,
+      "quote_volume_24h": 98863407.02,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3342,7 +3342,7 @@
       "support": 0.04279,
       "distance_resistance_pct": 7.49,
       "distance_support_pct": 4.29,
-      "quote_volume_24h": 41128899.2,
+      "quote_volume_24h": 41128637.05,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3372,7 +3372,7 @@
       "support": 0.23147,
       "distance_resistance_pct": 4.64,
       "distance_support_pct": 3.82,
-      "quote_volume_24h": 22958132.7,
+      "quote_volume_24h": 22959895.58,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3402,7 +3402,7 @@
       "support": 0.004047,
       "distance_resistance_pct": 3.54,
       "distance_support_pct": 3.07,
-      "quote_volume_24h": 22561789.48,
+      "quote_volume_24h": 22540270.49,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3432,7 +3432,7 @@
       "support": 0.004093,
       "distance_resistance_pct": 1.06,
       "distance_support_pct": 1.66,
-      "quote_volume_24h": 18449534.12,
+      "quote_volume_24h": 18444759.9,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3462,7 +3462,7 @@
       "support": 0.007841,
       "distance_resistance_pct": 3.16,
       "distance_support_pct": 2.86,
-      "quote_volume_24h": 10457195.53,
+      "quote_volume_24h": 10460231.19,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3492,7 +3492,7 @@
       "support": 0.234,
       "distance_resistance_pct": 2.47,
       "distance_support_pct": 5.22,
-      "quote_volume_24h": 3868707.09,
+      "quote_volume_24h": 3875772.44,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3522,7 +3522,7 @@
       "support": 0.0064,
       "distance_resistance_pct": 2.31,
       "distance_support_pct": 1.39,
-      "quote_volume_24h": 3603329.14,
+      "quote_volume_24h": 3604209.68,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
@@ -3552,7 +3552,7 @@
       "support": 6.22,
       "distance_resistance_pct": 1.12,
       "distance_support_pct": 0.8,
-      "quote_volume_24h": 3465243.21,
+      "quote_volume_24h": 3465043.74,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": null
@@ -3571,7 +3571,7 @@
       "support": 9.075,
       "distance_resistance_pct": 1.15,
       "distance_support_pct": 6.75,
-      "quote_volume_24h": 74514402.13,
+      "quote_volume_24h": 74596669.74,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3603,7 +3603,7 @@
       "support": 0.07532,
       "distance_resistance_pct": 5.99,
       "distance_support_pct": 9.2,
-      "quote_volume_24h": 45691491.77,
+      "quote_volume_24h": 45713460.26,
       "candle_close": 1789839899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3624,7 +3624,7 @@
       "support": 0.2063,
       "distance_resistance_pct": 2.02,
       "distance_support_pct": 0.91,
-      "quote_volume_24h": 39435069.43,
+      "quote_volume_24h": 39424728.76,
       "candle_close": 1789839899999,
       "reasons": [],
       "fundamental": {
