@@ -1,1 +1,29 @@
-{"updated_at":null,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","symbols":{}}
+{
+  "updated_at": "2026-09-19T07:30:14.218000+00:00",
+  "last_attempt_at": "2026-09-19T07:30:14.218000+00:00",
+  "status": "ok",
+  "mode": "OBSERVE_ONLY",
+  "execution": "NOT_IMPLEMENTED",
+  "source": "https://data-api.binance.vision",
+  "interval": "5m",
+  "stale_after_seconds": 1200,
+  "symbols": {
+    "BTCUSDT": {
+      "price": 81103.2,
+      "ema9": 81110.2137,
+      "ema21": 81085.9778,
+      "candle_close": 1789802999999,
+      "updated_at": "2026-09-19T07:30:14.218000+00:00",
+      "stale": false
+    },
+    "ETHUSDT": {
+      "price": 2629.4,
+      "ema9": 2628.9694,
+      "ema21": 2627.9198,
+      "candle_close": 1789802999999,
+      "updated_at": "2026-09-19T07:30:14.218000+00:00",
+      "stale": false
+    }
+  },
+  "errors": {}
+}
