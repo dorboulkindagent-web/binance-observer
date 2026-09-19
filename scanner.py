@@ -75,6 +75,16 @@ def forward_outcomes(history_path, current):
  for st in stats.values():
   if st["count"]: st["avg_move_pct"]=round(st["avg_move_pct"]/st["count"],2);st["favorable_rate"]=round(st["favorable"]/st["count"]*100,1)
  return stats
+def trend_context(symbol):
+ result={}
+ for interval in ("1h","4h","1d"):
+  try:
+   rows=get("/api/v3/klines",{"symbol":symbol,"interval":interval,"limit":60})
+   now=int(time.time()*1000);rows=[r for r in rows if int(r[6])<now];cl=[float(r[4]) for r in rows]
+   if len(cl)>=40:
+    e9=ema(cl[-30:],9);e21=ema(cl[-40:],21);result[interval]="UP" if e9>e21 else "DOWN"
+  except Exception: result[interval]="NA"
+ return result
 def main():
  info=get("/api/v3/exchangeInfo"); ticks=get("/api/v3/ticker/24hr"); fund=fundamentals()
  tv={x["symbol"]:float(x.get("quoteVolume",0)) for x in ticks}
@@ -93,6 +103,7 @@ def main():
     if a:
      base=symbol[:-4] if symbol.endswith("USDT") else symbol
      a["fundamental"]=fund.get(base)
+     if a["score"]>=55: a["trend_context"]=trend_context(symbol)
      out.append(a)
    except Exception:
     errors+=1
