@@ -1,1 +1,61 @@
-{"cash":10000,"positions":{},"closed":[],"equity":10000,"return_pct":0,"mode":"PAPER_ONLY","real_execution":"DISABLED"}
+{
+  "cash": 1311.5789473684213,
+  "positions": {
+    "SEIUSDT": {
+      "symbol": "SEIUSDT",
+      "entry": 0.0501,
+      "qty": 39920.159680638724,
+      "stop": 0.04894,
+      "target": 0.05242,
+      "atr_pct": 0.59,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER"
+    },
+    "ENAUSDT": {
+      "symbol": "ENAUSDT",
+      "entry": 0.2069,
+      "qty": 9666.505558240697,
+      "stop": 0.1949,
+      "target": 0.23090000000000002,
+      "atr_pct": 1.7,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER"
+    },
+    "SNDKBUSDT": {
+      "symbol": "SNDKBUSDT",
+      "entry": 1784.28,
+      "qty": 1.120900307126684,
+      "stop": 1766.4371999999998,
+      "target": 1819.9656000000002,
+      "atr_pct": 0.08,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER"
+    },
+    "ALGOUSDT": {
+      "symbol": "ALGOUSDT",
+      "entry": 0.1024,
+      "qty": 19531.25,
+      "stop": 0.1001,
+      "target": 0.10700000000000003,
+      "atr_pct": 0.79,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER"
+    },
+    "HOMEUSDT": {
+      "symbol": "HOMEUSDT",
+      "entry": 0.00654,
+      "qty": 105263.15789473681,
+      "stop": 0.00616,
+      "target": 0.0073,
+      "atr_pct": 0.93,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER"
+    }
+  },
+  "closed": [],
+  "equity": 10000.0,
+  "return_pct": 0.0,
+  "mode": "PAPER_ONLY",
+  "real_execution": "DISABLED",
+  "updated_at": "2026-09-19T20:26:41.670189+00:00"
+}
