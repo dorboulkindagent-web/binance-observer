@@ -1,1 +1,68 @@
-<!doctype html><html dir="rtl" lang="he"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Binance Observer</title><style>body{font-family:system-ui;background:#0b1020;color:#eef2ff;margin:0}.w{max-width:850px;margin:auto;padding:18px}.c{background:#151c31;border:1px solid #29334f;border-radius:18px;padding:18px;margin:12px 0}.g{display:grid;grid-template-columns:1fr 1fr;gap:12px}.p{font-size:30px;font-weight:800}.b{display:inline-block;background:#123d32;color:#7fffc9;padding:7px 12px;border-radius:99px}.warn{color:#ffd982}@media(max-width:600px){.g{grid-template-columns:1fr}}</style><div class=w><div class=c><span class=b>OBSERVE ONLY</span><h1>Binance Observer</h1><p>ניטור נתוני שוק ציבוריים בלבד. אין גישה לחשבון ואין קנייה או מכירה.</p></div><div id=s class=c>טוען…</div><div id=g class=g></div><div class="c warn">הנתונים מתעדכנים באמצעות GitHub Actions. התזמון אינו שרת רציף ועלול להתעכב.</div></div><script>async function r(){try{let x=await fetch('data.json?'+Date.now()).then(r=>r.json());s.innerHTML='<b>עדכון אחרון:</b> '+new Date(x.updated_at).toLocaleString('he-IL');g.innerHTML=Object.entries(x.symbols).map(([k,v])=>'<div class=c><b>'+k+'</b><div class=p>'+v.price.toLocaleString()+'</div><div>EMA9 '+v.ema9.toLocaleString()+'</div><div>EMA21 '+v.ema21.toLocaleString()+'</div></div>').join('')}catch(e){s.textContent='ממתין להרצת האיסוף הראשונה'}}r();setInterval(r,60000)</script></html>
+<!doctype html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Binance Observer</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;background:#0b1020;color:#eef2ff;margin:0;line-height:1.6}.wrap{max-width:940px;margin:auto;padding:24px}.top,.card,.notice{background:#151c31;border:1px solid #29334f;border-radius:18px;padding:22px;margin:14px 0}.top{display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:clamp(25px,5vw,36px);margin:8px 0}h2{margin:0;font-size:19px}p{margin:8px 0}.muted,small{color:#aab7d4}.badge{display:inline-block;background:#123d32;color:#7fffc9;padding:6px 12px;border-radius:99px;white-space:nowrap;font-size:12px;font-weight:750}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid .card{margin:0}.price{font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:-1px;direction:ltr;text-align:right;font-variant-numeric:tabular-nums}.metrics{display:flex;gap:28px;border-top:1px solid #29334f;margin-top:18px;padding-top:12px}.metric b{display:block;font-variant-numeric:tabular-nums}.notice{border-right:4px solid #dcb95a}.notice[data-kind=ok]{border-color:#56ca9d}.notice[data-kind=error]{border-color:#ff9292}.card[data-stale=true]{border-color:#b18a38}.stale{color:#ffd982}.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center}button{font:inherit;background:#dce7ff;color:#14203a;border:0;border-radius:10px;padding:10px 18px;font-weight:700;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #91b6ff;outline-offset:4px}button:disabled{opacity:.6;cursor:wait}a{color:#b7d1ff}footer{margin-top:24px;font-size:13px}.links{display:flex;gap:22px;flex-wrap:wrap}#updated,.timestamp{font-variant-numeric:tabular-nums}#error-detail{overflow-wrap:anywhere}@media(max-width:620px){.wrap{padding:16px}.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column;gap:4px}.card,.notice,.top{padding:18px}.toolbar{align-items:flex-start}.metrics{gap:36px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top"><div><span class="badge">OBSERVE ONLY</span><h1 dir="ltr">Binance Observer</h1><p class="muted">ניטור נתוני שוק ציבוריים של Binance Spot</p></div><div class="muted">ללא גישה לחשבון<br>ללא קנייה או מכירה</div></header>
+<section id="status-box" class="notice" aria-live="polite" data-kind="waiting"><div class="toolbar"><div><strong id="status">ממתין לנתונים</strong><div id="updated" class="muted">טרם בוצע איסוף מוצלח</div></div><button id="refresh" type="button">רענון</button></div><p id="error-detail" class="stale" hidden></p></section>
+<section class="grid" aria-label="תצפיות שוק" id="cards"></section>
+<section class="card"><h2>מה מוצג כאן?</h2><p>המחיר הוא מחיר הסגירה של הנר האחרון שהסתיים, לא מחיר עסקה בזמן אמת. EMA9 ו־EMA21 הם ממוצעים נעים של מחירי הסגירה, ואינם הוראות מסחר.</p><p id="cadence" class="muted">זמני האיסוף וחותמות הזמן מופיעים עם הנתונים. נתונים חסרים או ישנים מסומנים במפורש.</p></section>
+<footer><div class="links"><a href="data.json" target="_blank" rel="noopener">נתוני התצפית</a><a href="history.jsonl" download>תיעוד התצפיות</a></div><p class="muted">תצפית בלבד · ללא מפתחות API · ללא ביצוע עסקאות</p></footer>
+</main>
+<script>
+'use strict';
+const pairs=['BTCUSDT','ETHUSDT'];
+const elements={};
+for(const id of ['status-box','status','updated','error-detail','refresh','cards','cadence']) elements[id]=document.getElementById(id);
+let snapshot=null, networkError='', busy=false;
+const money=new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:4});
+function timestamp(value){if(!value)return 'טרם התקבל';const date=new Date(value);return Number.isFinite(date.getTime())?date.toLocaleString('he-IL'):'לא זמין';}
+function add(parent,tag,text,cls){const element=document.createElement(tag);element.textContent=text;if(cls)element.className=cls;parent.appendChild(element);return element;}
+function render(){
+ const data=snapshot||{}, values=data.symbols||{}, now=Date.now(), threshold=Number(data.stale_after_seconds||1200)*1000;
+ let staleCount=0, available=0;
+ elements.cards.replaceChildren();
+ for(const pair of pairs){
+  const value=values[pair], valid=value&&Number.isFinite(value.price)&&value.price>0&&Number.isFinite(value.candle_close);
+  const stale=!!valid&&(!!value.stale||now-value.candle_close>threshold);
+  if(valid)available++;if(stale)staleCount++;
+  const card=add(elements.cards,'article','','card');card.dataset.stale=String(stale);
+  add(card,'h2',pair).dir='ltr';add(card,'small','מחיר סגירת נר · USDT');
+  add(card,'div',valid?money.format(value.price):'—','price');
+  const metrics=add(card,'div','','metrics');
+  for(const [key,label] of [['ema9','EMA9'],['ema21','EMA21']]){const metric=add(metrics,'div','','metric');add(metric,'small',label);add(metric,'b',valid&&Number.isFinite(value[key])?money.format(value[key]):'—');}
+  add(card,'p',valid?'סגירת נר: '+timestamp(value.candle_close):'ממתין לתצפית הראשונה','muted timestamp');
+  if(stale)add(card,'p','נתון ישן — אין להציגו כעדכון חי','stale');
+  if(data.errors&&data.errors[pair])add(card,'p','האיסוף האחרון עבור הזוג נכשל','stale');
+ }
+ const hasError=!!networkError||data.status==='error';
+ const healthy=!hasError&&data.status==='ok'&&available===pairs.length&&staleCount===0;
+ elements['status-box'].dataset.kind=healthy?'ok':(hasError?'error':'waiting');
+ elements.status.textContent=networkError?'לא ניתן לעדכן את התצוגה':healthy?'התקבלו נתונים תקינים':staleCount?'הנתונים אינם עדכניים':data.status==='partial'?'האיסוף הצליח חלקית':data.status==='error'?'האיסוף נכשל':'ממתין לאיסוף הראשון';
+ elements.updated.textContent=data.updated_at?'איסוף מוצלח אחרון: '+timestamp(data.updated_at):'טרם בוצע איסוף מוצלח';
+ const error=networkError||(data.status==='error'?'מקור הנתונים אינו זמין כרגע. נתונים קודמים, אם קיימים, נשמרים ומסומנים כישנים.':'');
+ elements['error-detail'].textContent=error;elements['error-detail'].hidden=!error;
+ elements.cadence.textContent=data.interval==='1m'?'נרות של דקה. השרת מנסה לאסוף נתונים מדי 15 שניות; התצוגה מתרעננת מדי דקה.':'נרות של 5 דקות. GitHub Actions מתוזמן לאיסוף מדי 10 דקות, אך הרצות עשויות להתעכב. התצוגה מתרעננת מדי דקה.';
+}
+async function refresh(){
+ if(busy)return;busy=true;elements.refresh.disabled=true;
+ try{
+  const response=await fetch('data.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(12000)});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const data=await response.json();
+  if(!data||typeof data!=='object'||!data.symbols||typeof data.symbols!=='object'||Array.isArray(data.symbols))throw new Error('Invalid data');
+  snapshot=data;networkError='';
+ }catch(error){networkError='לא התקבל עדכון מהשרת. מוצגים רק הנתונים האחרונים שהתקבלו, אם ישנם.';}
+ finally{busy=false;elements.refresh.disabled=false;render();}
+}
+elements.refresh.addEventListener('click',refresh);render();refresh();setInterval(refresh,60000);setInterval(render,10000);
+</script>
+</body>
+</html>
