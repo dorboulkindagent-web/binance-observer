@@ -55,6 +55,26 @@ def fundamentals():
     out[sym]={"name":x.get("name"),"rank":x.get("rank"),"market_cap":q.get("market_cap"),"volume_24h_usd":q.get("volume_24h"),"percent_change_24h":q.get("percent_change_24h"),"percent_change_7d":q.get("percent_change_7d"),"circulating_supply":x.get("circulating_supply"),"total_supply":x.get("total_supply"),"max_supply":x.get("max_supply"),"source":"CoinPaprika"}
   return out
  except Exception:return {}
+def forward_outcomes(history_path, current):
+ try: lines=history_path.read_text().splitlines()
+ except FileNotFoundError: return {}
+ old=[]
+ for line in lines:
+  try: old.append(json.loads(line))
+  except Exception: pass
+ prices={x["symbol"]:x["price"] for x in current}
+ stats={}
+ for snap in old[-288:]:
+  for a in snap.get("alerts",[]):
+   s=a.get("symbol")
+   if s not in prices or not a.get("price"): continue
+   move=(prices[s]/a["price"]-1)*100
+   key=a.get("kind","OTHER"); st=stats.setdefault(key,{"count":0,"favorable":0,"avg_move_pct":0})
+   st["count"]+=1; st["avg_move_pct"]+=move
+   if (key=="BREAKOUT_SETUP" and move>0) or (key=="BREAKDOWN_RISK" and move<0): st["favorable"]+=1
+ for st in stats.values():
+  if st["count"]: st["avg_move_pct"]=round(st["avg_move_pct"]/st["count"],2);st["favorable_rate"]=round(st["favorable"]/st["count"]*100,1)
+ return stats
 def main():
  info=get("/api/v3/exchangeInfo"); ticks=get("/api/v3/ticker/24hr"); fund=fundamentals()
  tv={x["symbol"]:float(x.get("quoteVolume",0)) for x in ticks}
@@ -78,7 +98,8 @@ def main():
     errors+=1
  out.sort(key=lambda x:(x["score"],x["quote_volume_24h"]),reverse=True)
  stamp=dt.datetime.now(dt.timezone.utc).isoformat()
- snap={"updated_at":stamp,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","universe_count":len(syms),"analyzed_count":len(out),"candidate_limit":120,"interval":"15m","errors":errors,"alerts":[x for x in out if x["score"]>=55][:40],"leaders":out[:80]}
+ performance=forward_outcomes(Path("docs/alerts-history.jsonl"),out)
+ snap={"updated_at":stamp,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","universe_count":len(syms),"analyzed_count":len(out),"candidate_limit":120,"interval":"15m","errors":errors,"performance":performance,"alerts":[x for x in out if x["score"]>=55][:40],"leaders":out[:80]}
  Path("docs").mkdir(exist_ok=True);Path("docs/scanner.json").write_text(json.dumps(snap,ensure_ascii=False,indent=2)+"\n")
  h=Path("docs/alerts-history.jsonl");old=h.read_text().splitlines() if h.exists() else [];old.append(json.dumps({"updated_at":stamp,"alerts":snap["alerts"]},ensure_ascii=False));h.write_text("\n".join(old[-1008:])+"\n")
 if __name__=="__main__":main()
