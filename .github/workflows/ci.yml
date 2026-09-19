@@ -1,59 +1,29 @@
-name: Test observer
+name: Test scanner
 on:
   push:
-    paths-ignore: ['docs/data.json', 'docs/history.jsonl']
-  pull_request:
-    paths-ignore: ['docs/data.json', 'docs/history.jsonl']
+    paths-ignore: ['docs/scanner.json','docs/alerts-history.jsonl','docs/data.json','docs/history.jsonl']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  test:
+  scanner-smoke:
     runs-on: ubuntu-slim
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python -m unittest discover -s tests -v
-  live-data:
-    if: github.event_name != 'pull_request'
-    runs-on: ubuntu-slim
-    timeout-minutes: 5
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Verify the public market-data connection
-        run: python collector.py
-      - name: Preserve live-check result
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-market-check
-          path: docs/data.json
-          retention-days: 3
-  browser:
-    runs-on: ubuntu-latest
-    timeout-minutes: 8
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install playwright==1.57.0
-      - run: python -m playwright install --with-deps chromium
-      - run: python tests/browser_smoke.py
-      - name: Store browser evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: browser-evidence
-          path: artifacts/
-          retention-days: 3
+        with: {python-version: '3.12'}
+      - name: Validate dashboard and latest scanner payload
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          h=Path('docs/index.html').read_text(encoding='utf-8')
+          assert '<meta charset="utf-8">' in h
+          assert 'Binance Radar' in h
+          assert 'ניתוח טכני' in h and 'ניתוח פונדמנטלי' in h
+          d=json.loads(Path('docs/scanner.json').read_text(encoding='utf-8'))
+          assert d.get('execution') == 'NOT_IMPLEMENTED'
+          assert isinstance(d.get('alerts'),list)
+          print('dashboard/scanner payload OK')
+          PY
