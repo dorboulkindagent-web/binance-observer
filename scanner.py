@@ -1,5 +1,6 @@
 """Binance Spot market scanner. Public data only; never authenticates or trades."""
 import json, math, time, urllib.request, urllib.parse, datetime as dt
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 BASE="https://data-api.binance.vision"; QUOTES=("USDT",); STABLE={"USDCUSDT","FDUSDUSDT","TUSDUSDT","USDPUSDT","DAIUSDT"}
 def get(path,params=None):
@@ -49,11 +50,17 @@ def main():
  syms=[x["symbol"] for x in info["symbols"] if x.get("status")=="TRADING" and x.get("quoteAsset") in QUOTES and x.get("isSpotTradingAllowed",True) and x["symbol"] not in STABLE]
  # Free-tier budget: scan all eligible symbols for liquidity, then technical candles for top 120 liquid markets.
  syms.sort(key=lambda s:tv.get(s,0),reverse=True); candidates=syms[:120]; out=[];errors=0
- for s in candidates:
-  try:
-   rows=get("/api/v3/klines",{"symbol":s,"interval":"15m","limit":60}); a=analyze(s,rows,tv.get(s,0))
-   if a:out.append(a)
-  except Exception:errors+=1
+ def scan_one(s):
+  rows=get("/api/v3/klines",{"symbol":s,"interval":"15m","limit":60})
+  return analyze(s,rows,tv.get(s,0))
+ with ThreadPoolExecutor(max_workers=12) as pool:
+  futures={pool.submit(scan_one,s):s for s in candidates}
+  for future in as_completed(futures):
+   try:
+    a=future.result()
+    if a:out.append(a)
+   except Exception:
+    errors+=1
  out.sort(key=lambda x:(x["score"],x["quote_volume_24h"]),reverse=True)
  stamp=dt.datetime.now(dt.timezone.utc).isoformat()
  snap={"updated_at":stamp,"mode":"OBSERVE_ONLY","execution":"NOT_IMPLEMENTED","universe_count":len(syms),"analyzed_count":len(out),"candidate_limit":120,"interval":"15m","errors":errors,"alerts":[x for x in out if x["score"]>=55][:40],"leaders":out[:80]}
