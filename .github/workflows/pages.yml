@@ -1,20 +1,19 @@
-name: Publish observer dashboard
+name: Publish Radar dashboard
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ['Observe Binance']
+    workflows: ['Market Scanner']
     types: [completed]
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: observer-pages
-  cancel-in-progress: false
+  group: radar-pages
+  cancel-in-progress: true
 jobs:
   deploy:
-    # Never turn a private repository public or enable a website implicitly.
-    if: github.event.repository.has_pages == true && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_branch == 'main')
+    if: github.event.repository.has_pages == true && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     environment:
@@ -22,12 +21,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
+        with: {ref: main}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      - name: Deploy
-        id: deployment
+        with: {path: docs}
+      - id: deployment
         uses: actions/deploy-pages@v4
