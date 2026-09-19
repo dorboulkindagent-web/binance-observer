@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T20:18:19.914544+00:00",
+  "updated_at": "2026-09-19T20:20:28.526649+00:00",
   "mode": "OBSERVE_ONLY",
   "execution": "NOT_IMPLEMENTED",
   "universe_count": 489,
@@ -9,16 +9,16 @@
   "errors": 0,
   "performance": {
     "BREAKDOWN_RISK": {
-      "count": 396,
+      "count": 416,
       "favorable": 117,
-      "avg_move_pct": 2.47,
-      "favorable_rate": 29.5
+      "avg_move_pct": 2.35,
+      "favorable_rate": 28.1
     },
     "BREAKOUT_SETUP": {
-      "count": 176,
+      "count": 196,
       "favorable": 74,
-      "avg_move_pct": 1.75,
-      "favorable_rate": 42.0
+      "avg_move_pct": 1.57,
+      "favorable_rate": 37.8
     }
   },
   "alerts": [
@@ -36,7 +36,7 @@
       "support": 0.04894,
       "distance_resistance_pct": -0.4,
       "distance_support_pct": 2.32,
-      "quote_volume_24h": 5356515.39,
+      "quote_volume_24h": 5365165.43,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -54,6 +54,11 @@
         "total_supply": 10000000000,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -70,14 +75,17 @@
       "support": 6.22,
       "distance_resistance_pct": -0.47,
       "distance_support_pct": 2.35,
-      "quote_volume_24h": 3378008.53,
+      "quote_volume_24h": 3378601.95,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
         "נפח מוגבר",
         "פריצה"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP"
+      }
     },
     {
       "symbol": "ENAUSDT",
@@ -93,7 +101,7 @@
       "support": 0.1949,
       "distance_resistance_pct": -0.19,
       "distance_support_pct": 5.8,
-      "quote_volume_24h": 91113396.92,
+      "quote_volume_24h": 91160737.86,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -110,6 +118,11 @@
         "total_supply": 15000000000,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -126,7 +139,7 @@
       "support": 0.02482,
       "distance_resistance_pct": 6.4,
       "distance_support_pct": -0.53,
-      "quote_volume_24h": 12004943.09,
+      "quote_volume_24h": 12001131.85,
       "candle_close": 1789848899999,
       "reasons": [
         "שבירה"
@@ -142,6 +155,11 @@
         "total_supply": 1063760066,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -158,7 +176,7 @@
       "support": 1.12,
       "distance_resistance_pct": 2.67,
       "distance_support_pct": 0.27,
-      "quote_volume_24h": 5339845.31,
+      "quote_volume_24h": 5356562.71,
       "candle_close": 1789848899999,
       "reasons": [
         "נפח מוגבר"
@@ -174,6 +192,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -190,13 +213,18 @@
       "support": 1776.5,
       "distance_resistance_pct": -0.09,
       "distance_support_pct": 0.44,
-      "quote_volume_24h": 5043759.38,
+      "quote_volume_24h": 5003114.34,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
         "פריצה"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
+      }
     },
     {
       "symbol": "ALGOUSDT",
@@ -212,7 +240,7 @@
       "support": 0.1001,
       "distance_resistance_pct": -0.2,
       "distance_support_pct": 2.25,
-      "quote_volume_24h": 3671239.49,
+      "quote_volume_24h": 3671950.92,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -229,6 +257,11 @@
         "total_supply": 8446894635,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -245,7 +278,7 @@
       "support": 0.00616,
       "distance_resistance_pct": -0.31,
       "distance_support_pct": 5.81,
-      "quote_volume_24h": 3632988.71,
+      "quote_volume_24h": 3633358.21,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -262,6 +295,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -278,7 +316,7 @@
       "support": 0.99987,
       "distance_resistance_pct": 0.02,
       "distance_support_pct": -0.0,
-      "quote_volume_24h": 142255504.49,
+      "quote_volume_24h": 142198892.48,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -295,6 +333,11 @@
         "total_supply": 4356798749,
         "max_supply": 2127980480,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -311,7 +354,7 @@
       "support": 2632.0,
       "distance_resistance_pct": 1.23,
       "distance_support_pct": 0.14,
-      "quote_volume_24h": 559312029.81,
+      "quote_volume_24h": 558885047.28,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -325,6 +368,11 @@
         "total_supply": 120232214,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -341,7 +389,7 @@
       "support": 1470.41,
       "distance_resistance_pct": 3.63,
       "distance_support_pct": 0.41,
-      "quote_volume_24h": 332638185.74,
+      "quote_volume_24h": 332769823.06,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -355,6 +403,11 @@
         "total_supply": 16328269,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -371,7 +424,7 @@
       "support": 110.68,
       "distance_resistance_pct": 1.11,
       "distance_support_pct": 0.49,
-      "quote_volume_24h": 240125020.48,
+      "quote_volume_24h": 239846768.33,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -385,6 +438,11 @@
         "total_supply": 630740924,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -401,7 +459,7 @@
       "support": 0.0308,
       "distance_resistance_pct": 3.45,
       "distance_support_pct": 18.3,
-      "quote_volume_24h": 115888234.77,
+      "quote_volume_24h": 115895166.01,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -417,6 +475,11 @@
         "total_supply": 425250000,
         "max_supply": 2100000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -433,7 +496,7 @@
       "support": 1.0002,
       "distance_resistance_pct": 0.01,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 38174035.87,
+      "quote_volume_24h": 38173475.71,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -450,6 +513,11 @@
         "total_supply": 176692685,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -466,7 +534,7 @@
       "support": 0.04129,
       "distance_resistance_pct": 9.03,
       "distance_support_pct": 1.85,
-      "quote_volume_24h": 34970105.33,
+      "quote_volume_24h": 34936174.28,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -480,6 +548,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -496,7 +569,7 @@
       "support": 0.4237,
       "distance_resistance_pct": 4.45,
       "distance_support_pct": 0.19,
-      "quote_volume_24h": 33128137.82,
+      "quote_volume_24h": 33124303.4,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -510,6 +583,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -526,7 +604,7 @@
       "support": 57.22,
       "distance_resistance_pct": 0.41,
       "distance_support_pct": 1.34,
-      "quote_volume_24h": 31326323.26,
+      "quote_volume_24h": 31323146.79,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -542,6 +620,11 @@
         "total_supply": 77628548,
         "max_supply": 84000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -558,7 +641,7 @@
       "support": 12.461,
       "distance_resistance_pct": 1.47,
       "distance_support_pct": 0.4,
-      "quote_volume_24h": 31150935.36,
+      "quote_volume_24h": 31151391.21,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -572,6 +655,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -588,7 +676,7 @@
       "support": 0.4253,
       "distance_resistance_pct": 0.91,
       "distance_support_pct": 2.72,
-      "quote_volume_24h": 25842106.7,
+      "quote_volume_24h": 25844802.64,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -604,6 +692,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -620,7 +713,7 @@
       "support": 0.756,
       "distance_resistance_pct": 0.26,
       "distance_support_pct": 1.82,
-      "quote_volume_24h": 20842617.96,
+      "quote_volume_24h": 20842730.92,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -636,6 +729,11 @@
         "total_supply": 8000000000,
         "max_supply": 8000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -652,7 +750,7 @@
       "support": 0.004093,
       "distance_resistance_pct": 0.81,
       "distance_support_pct": 1.89,
-      "quote_volume_24h": 16711731.21,
+      "quote_volume_24h": 16725033.83,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -668,6 +766,11 @@
         "total_supply": 833096622784,
         "max_supply": 1000000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -684,7 +787,7 @@
       "support": 0.01905,
       "distance_resistance_pct": 6.07,
       "distance_support_pct": 1.24,
-      "quote_volume_24h": 9341295.89,
+      "quote_volume_24h": 9340709.68,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -698,6 +801,11 @@
         "total_supply": 2000000000,
         "max_supply": 2000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -714,7 +822,7 @@
       "support": 2.382,
       "distance_resistance_pct": 1.42,
       "distance_support_pct": 0.21,
-      "quote_volume_24h": 7573276.34,
+      "quote_volume_24h": 7574840.3,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -728,6 +836,11 @@
         "total_supply": 378248722,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -744,7 +857,7 @@
       "support": 1.565,
       "distance_resistance_pct": 1.78,
       "distance_support_pct": 0.45,
-      "quote_volume_24h": 6978668.1,
+      "quote_volume_24h": 6979759.71,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -758,6 +871,11 @@
         "total_supply": 532450921,
         "max_supply": 644168762,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -774,7 +892,7 @@
       "support": 0.301,
       "distance_resistance_pct": 0.64,
       "distance_support_pct": 3.53,
-      "quote_volume_24h": 5202637.14,
+      "quote_volume_24h": 5210499.66,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -790,6 +908,11 @@
         "total_supply": 1814620538,
         "max_supply": 1818000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -806,7 +929,7 @@
       "support": 0.008371,
       "distance_resistance_pct": 1.06,
       "distance_support_pct": 4.21,
-      "quote_volume_24h": 4974813.91,
+      "quote_volume_24h": 4975482.61,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -822,6 +945,11 @@
         "total_supply": 85985041177,
         "max_supply": 86712634466,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -838,7 +966,7 @@
       "support": 4374.33,
       "distance_resistance_pct": 0.09,
       "distance_support_pct": 0.0,
-      "quote_volume_24h": 4640730.79,
+      "quote_volume_24h": 4640698.39,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -855,6 +983,11 @@
         "total_supply": 246524,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -871,7 +1004,7 @@
       "support": 0.67,
       "distance_resistance_pct": 0.4,
       "distance_support_pct": 1.6,
-      "quote_volume_24h": 3648857.79,
+      "quote_volume_24h": 3647398.62,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -887,6 +1020,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -903,7 +1041,7 @@
       "support": 0.04097,
       "distance_resistance_pct": 2.31,
       "distance_support_pct": 0.34,
-      "quote_volume_24h": 3508807.98,
+      "quote_volume_24h": 3482378.33,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -917,6 +1055,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -933,7 +1076,7 @@
       "support": 0.233,
       "distance_resistance_pct": 3.28,
       "distance_support_pct": 0.68,
-      "quote_volume_24h": 3036817.48,
+      "quote_volume_24h": 3036834.91,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -947,6 +1090,11 @@
         "total_supply": 1714844124,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -963,7 +1111,7 @@
       "support": 0.05982,
       "distance_resistance_pct": 0.74,
       "distance_support_pct": 1.87,
-      "quote_volume_24h": 2882739.15,
+      "quote_volume_24h": 2882877.04,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -979,6 +1127,11 @@
         "total_supply": 9999987956,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -995,7 +1148,7 @@
       "support": 81309.68,
       "distance_resistance_pct": 0.66,
       "distance_support_pct": 0.13,
-      "quote_volume_24h": 876417691.56,
+      "quote_volume_24h": 876230653.29,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1011,6 +1164,11 @@
         "total_supply": 20086678,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1027,7 +1185,7 @@
       "support": 1.4211,
       "distance_resistance_pct": 0.94,
       "distance_support_pct": 0.76,
-      "quote_volume_24h": 260454203.34,
+      "quote_volume_24h": 260267299.43,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1041,6 +1199,11 @@
         "total_supply": 99985622230,
         "max_supply": 100000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1057,7 +1220,7 @@
       "support": 761.34,
       "distance_resistance_pct": 1.13,
       "distance_support_pct": 0.21,
-      "quote_volume_24h": 90301082.3,
+      "quote_volume_24h": 90308901.43,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1071,6 +1234,11 @@
         "total_supply": 133160315,
         "max_supply": 200000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1087,7 +1255,7 @@
       "support": 3.8e-06,
       "distance_resistance_pct": 2.36,
       "distance_support_pct": 10.17,
-      "quote_volume_24h": 52297875.38,
+      "quote_volume_24h": 52366481.39,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1103,6 +1271,11 @@
         "total_supply": 420690000000000,
         "max_supply": 420690000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1119,7 +1292,7 @@
       "support": 4.216,
       "distance_resistance_pct": 13.57,
       "distance_support_pct": 2.83,
-      "quote_volume_24h": 48784050.94,
+      "quote_volume_24h": 48785602.78,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1133,6 +1306,11 @@
         "total_supply": 65652466,
         "max_supply": 66000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1149,7 +1327,7 @@
       "support": 261.2,
       "distance_resistance_pct": 3.99,
       "distance_support_pct": 0.72,
-      "quote_volume_24h": 47966004.84,
+      "quote_volume_24h": 47971190.47,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1163,6 +1341,11 @@
         "total_supply": 21000000,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1179,7 +1362,7 @@
       "support": 0.2256,
       "distance_resistance_pct": 0.56,
       "distance_support_pct": 1.96,
-      "quote_volume_24h": 44382348.63,
+      "quote_volume_24h": 44392838.84,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1195,6 +1378,11 @@
         "total_supply": 44995037804,
         "max_supply": 45000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1216,7 +1404,12 @@
       "reasons": [
         "קרוב להתנגדות"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
+      }
     },
     {
       "symbol": "XLMUSDT",
@@ -1232,7 +1425,7 @@
       "support": 0.1962,
       "distance_resistance_pct": 0.6,
       "distance_support_pct": 1.8,
-      "quote_volume_24h": 27168412.06,
+      "quote_volume_24h": 27169706.61,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1248,6 +1441,11 @@
         "total_supply": 50001786840,
         "max_supply": 50001806812,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     }
   ],
@@ -1266,7 +1464,7 @@
       "support": 0.04894,
       "distance_resistance_pct": -0.4,
       "distance_support_pct": 2.32,
-      "quote_volume_24h": 5356515.39,
+      "quote_volume_24h": 5365165.43,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1284,6 +1482,11 @@
         "total_supply": 10000000000,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -1300,14 +1503,17 @@
       "support": 6.22,
       "distance_resistance_pct": -0.47,
       "distance_support_pct": 2.35,
-      "quote_volume_24h": 3378008.53,
+      "quote_volume_24h": 3378601.95,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
         "נפח מוגבר",
         "פריצה"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP"
+      }
     },
     {
       "symbol": "ENAUSDT",
@@ -1323,7 +1529,7 @@
       "support": 0.1949,
       "distance_resistance_pct": -0.19,
       "distance_support_pct": 5.8,
-      "quote_volume_24h": 91113396.92,
+      "quote_volume_24h": 91160737.86,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1340,6 +1546,11 @@
         "total_supply": 15000000000,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1356,7 +1567,7 @@
       "support": 0.02482,
       "distance_resistance_pct": 6.4,
       "distance_support_pct": -0.53,
-      "quote_volume_24h": 12004943.09,
+      "quote_volume_24h": 12001131.85,
       "candle_close": 1789848899999,
       "reasons": [
         "שבירה"
@@ -1372,6 +1583,11 @@
         "total_supply": 1063760066,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1388,7 +1604,7 @@
       "support": 1.12,
       "distance_resistance_pct": 2.67,
       "distance_support_pct": 0.27,
-      "quote_volume_24h": 5339845.31,
+      "quote_volume_24h": 5356562.71,
       "candle_close": 1789848899999,
       "reasons": [
         "נפח מוגבר"
@@ -1404,6 +1620,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1420,13 +1641,18 @@
       "support": 1776.5,
       "distance_resistance_pct": -0.09,
       "distance_support_pct": 0.44,
-      "quote_volume_24h": 5043759.38,
+      "quote_volume_24h": 5003114.34,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
         "פריצה"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
+      }
     },
     {
       "symbol": "ALGOUSDT",
@@ -1442,7 +1668,7 @@
       "support": 0.1001,
       "distance_resistance_pct": -0.2,
       "distance_support_pct": 2.25,
-      "quote_volume_24h": 3671239.49,
+      "quote_volume_24h": 3671950.92,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1459,6 +1685,11 @@
         "total_supply": 8446894635,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1475,7 +1706,7 @@
       "support": 0.00616,
       "distance_resistance_pct": -0.31,
       "distance_support_pct": 5.81,
-      "quote_volume_24h": 3632988.71,
+      "quote_volume_24h": 3633358.21,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1492,6 +1723,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -1508,7 +1744,7 @@
       "support": 0.99987,
       "distance_resistance_pct": 0.02,
       "distance_support_pct": -0.0,
-      "quote_volume_24h": 142255504.49,
+      "quote_volume_24h": 142198892.48,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1525,6 +1761,11 @@
         "total_supply": 4356798749,
         "max_supply": 2127980480,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -1541,7 +1782,7 @@
       "support": 2632.0,
       "distance_resistance_pct": 1.23,
       "distance_support_pct": 0.14,
-      "quote_volume_24h": 559312029.81,
+      "quote_volume_24h": 558885047.28,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1555,6 +1796,11 @@
         "total_supply": 120232214,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1571,7 +1817,7 @@
       "support": 1470.41,
       "distance_resistance_pct": 3.63,
       "distance_support_pct": 0.41,
-      "quote_volume_24h": 332638185.74,
+      "quote_volume_24h": 332769823.06,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1585,6 +1831,11 @@
         "total_supply": 16328269,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1601,7 +1852,7 @@
       "support": 110.68,
       "distance_resistance_pct": 1.11,
       "distance_support_pct": 0.49,
-      "quote_volume_24h": 240125020.48,
+      "quote_volume_24h": 239846768.33,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1615,6 +1866,11 @@
         "total_supply": 630740924,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1631,7 +1887,7 @@
       "support": 0.0308,
       "distance_resistance_pct": 3.45,
       "distance_support_pct": 18.3,
-      "quote_volume_24h": 115888234.77,
+      "quote_volume_24h": 115895166.01,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1647,6 +1903,11 @@
         "total_supply": 425250000,
         "max_supply": 2100000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -1663,7 +1924,7 @@
       "support": 1.0002,
       "distance_resistance_pct": 0.01,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 38174035.87,
+      "quote_volume_24h": 38173475.71,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -1680,6 +1941,11 @@
         "total_supply": 176692685,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -1696,7 +1962,7 @@
       "support": 0.04129,
       "distance_resistance_pct": 9.03,
       "distance_support_pct": 1.85,
-      "quote_volume_24h": 34970105.33,
+      "quote_volume_24h": 34936174.28,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1710,6 +1976,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1726,7 +1997,7 @@
       "support": 0.4237,
       "distance_resistance_pct": 4.45,
       "distance_support_pct": 0.19,
-      "quote_volume_24h": 33128137.82,
+      "quote_volume_24h": 33124303.4,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1740,6 +2011,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1756,7 +2032,7 @@
       "support": 57.22,
       "distance_resistance_pct": 0.41,
       "distance_support_pct": 1.34,
-      "quote_volume_24h": 31326323.26,
+      "quote_volume_24h": 31323146.79,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1772,6 +2048,11 @@
         "total_supply": 77628548,
         "max_supply": 84000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1788,7 +2069,7 @@
       "support": 12.461,
       "distance_resistance_pct": 1.47,
       "distance_support_pct": 0.4,
-      "quote_volume_24h": 31150935.36,
+      "quote_volume_24h": 31151391.21,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1802,6 +2083,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1818,7 +2104,7 @@
       "support": 0.4253,
       "distance_resistance_pct": 0.91,
       "distance_support_pct": 2.72,
-      "quote_volume_24h": 25842106.7,
+      "quote_volume_24h": 25844802.64,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1834,6 +2120,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1850,7 +2141,7 @@
       "support": 0.756,
       "distance_resistance_pct": 0.26,
       "distance_support_pct": 1.82,
-      "quote_volume_24h": 20842617.96,
+      "quote_volume_24h": 20842730.92,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1866,6 +2157,11 @@
         "total_supply": 8000000000,
         "max_supply": 8000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1882,7 +2178,7 @@
       "support": 0.004093,
       "distance_resistance_pct": 0.81,
       "distance_support_pct": 1.89,
-      "quote_volume_24h": 16711731.21,
+      "quote_volume_24h": 16725033.83,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -1898,6 +2194,11 @@
         "total_supply": 833096622784,
         "max_supply": 1000000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -1914,7 +2215,7 @@
       "support": 0.01905,
       "distance_resistance_pct": 6.07,
       "distance_support_pct": 1.24,
-      "quote_volume_24h": 9341295.89,
+      "quote_volume_24h": 9340709.68,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1928,6 +2229,11 @@
         "total_supply": 2000000000,
         "max_supply": 2000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1944,7 +2250,7 @@
       "support": 2.382,
       "distance_resistance_pct": 1.42,
       "distance_support_pct": 0.21,
-      "quote_volume_24h": 7573276.34,
+      "quote_volume_24h": 7574840.3,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1958,6 +2264,11 @@
         "total_supply": 378248722,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -1974,7 +2285,7 @@
       "support": 1.565,
       "distance_resistance_pct": 1.78,
       "distance_support_pct": 0.45,
-      "quote_volume_24h": 6978668.1,
+      "quote_volume_24h": 6979759.71,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -1988,6 +2299,11 @@
         "total_supply": 532450921,
         "max_supply": 644168762,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2004,7 +2320,7 @@
       "support": 0.301,
       "distance_resistance_pct": 0.64,
       "distance_support_pct": 3.53,
-      "quote_volume_24h": 5202637.14,
+      "quote_volume_24h": 5210499.66,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2020,6 +2336,11 @@
         "total_supply": 1814620538,
         "max_supply": 1818000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2036,7 +2357,7 @@
       "support": 0.008371,
       "distance_resistance_pct": 1.06,
       "distance_support_pct": 4.21,
-      "quote_volume_24h": 4974813.91,
+      "quote_volume_24h": 4975482.61,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2052,6 +2373,11 @@
         "total_supply": 85985041177,
         "max_supply": 86712634466,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2068,7 +2394,7 @@
       "support": 4374.33,
       "distance_resistance_pct": 0.09,
       "distance_support_pct": 0.0,
-      "quote_volume_24h": 4640730.79,
+      "quote_volume_24h": 4640698.39,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -2085,6 +2411,11 @@
         "total_supply": 246524,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2101,7 +2432,7 @@
       "support": 0.67,
       "distance_resistance_pct": 0.4,
       "distance_support_pct": 1.6,
-      "quote_volume_24h": 3648857.79,
+      "quote_volume_24h": 3647398.62,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2117,6 +2448,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2133,7 +2469,7 @@
       "support": 0.04097,
       "distance_resistance_pct": 2.31,
       "distance_support_pct": 0.34,
-      "quote_volume_24h": 3508807.98,
+      "quote_volume_24h": 3482378.33,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2147,6 +2483,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2163,7 +2504,7 @@
       "support": 0.233,
       "distance_resistance_pct": 3.28,
       "distance_support_pct": 0.68,
-      "quote_volume_24h": 3036817.48,
+      "quote_volume_24h": 3036834.91,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2177,6 +2518,11 @@
         "total_supply": 1714844124,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2193,7 +2539,7 @@
       "support": 0.05982,
       "distance_resistance_pct": 0.74,
       "distance_support_pct": 1.87,
-      "quote_volume_24h": 2882739.15,
+      "quote_volume_24h": 2882877.04,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2209,6 +2555,11 @@
         "total_supply": 9999987956,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2225,7 +2576,7 @@
       "support": 81309.68,
       "distance_resistance_pct": 0.66,
       "distance_support_pct": 0.13,
-      "quote_volume_24h": 876417691.56,
+      "quote_volume_24h": 876230653.29,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2241,6 +2592,11 @@
         "total_supply": 20086678,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2257,7 +2613,7 @@
       "support": 1.4211,
       "distance_resistance_pct": 0.94,
       "distance_support_pct": 0.76,
-      "quote_volume_24h": 260454203.34,
+      "quote_volume_24h": 260267299.43,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2271,6 +2627,11 @@
         "total_supply": 99985622230,
         "max_supply": 100000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2287,7 +2648,7 @@
       "support": 761.34,
       "distance_resistance_pct": 1.13,
       "distance_support_pct": 0.21,
-      "quote_volume_24h": 90301082.3,
+      "quote_volume_24h": 90308901.43,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2301,6 +2662,11 @@
         "total_supply": 133160315,
         "max_supply": 200000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2317,7 +2683,7 @@
       "support": 3.8e-06,
       "distance_resistance_pct": 2.36,
       "distance_support_pct": 10.17,
-      "quote_volume_24h": 52297875.38,
+      "quote_volume_24h": 52366481.39,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2333,6 +2699,11 @@
         "total_supply": 420690000000000,
         "max_supply": 420690000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2349,7 +2720,7 @@
       "support": 4.216,
       "distance_resistance_pct": 13.57,
       "distance_support_pct": 2.83,
-      "quote_volume_24h": 48784050.94,
+      "quote_volume_24h": 48785602.78,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2363,6 +2734,11 @@
         "total_supply": 65652466,
         "max_supply": 66000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2379,7 +2755,7 @@
       "support": 261.2,
       "distance_resistance_pct": 3.99,
       "distance_support_pct": 0.72,
-      "quote_volume_24h": 47966004.84,
+      "quote_volume_24h": 47971190.47,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2393,6 +2769,11 @@
         "total_supply": 21000000,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2409,7 +2790,7 @@
       "support": 0.2256,
       "distance_resistance_pct": 0.56,
       "distance_support_pct": 1.96,
-      "quote_volume_24h": 44382348.63,
+      "quote_volume_24h": 44392838.84,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2425,6 +2806,11 @@
         "total_supply": 44995037804,
         "max_supply": 45000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2446,7 +2832,12 @@
       "reasons": [
         "קרוב להתנגדות"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
+      }
     },
     {
       "symbol": "XLMUSDT",
@@ -2462,7 +2853,7 @@
       "support": 0.1962,
       "distance_resistance_pct": 0.6,
       "distance_support_pct": 1.8,
-      "quote_volume_24h": 27168412.06,
+      "quote_volume_24h": 27169706.61,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2478,6 +2869,11 @@
         "total_supply": 50001786840,
         "max_supply": 50001806812,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2494,7 +2890,7 @@
       "support": 0.3378,
       "distance_resistance_pct": 0.12,
       "distance_support_pct": 0.44,
-      "quote_volume_24h": 24135900.88,
+      "quote_volume_24h": 24132768.59,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2510,6 +2906,11 @@
         "total_supply": 94957222590,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2526,7 +2927,7 @@
       "support": 0.1778,
       "distance_resistance_pct": 2.3,
       "distance_support_pct": 0.39,
-      "quote_volume_24h": 16826215.97,
+      "quote_volume_24h": 16832765.78,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2540,6 +2941,11 @@
         "total_supply": 2719493897,
         "max_supply": 2714493896,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2556,7 +2962,7 @@
       "support": 0.10512,
       "distance_resistance_pct": 3.8,
       "distance_support_pct": 1.35,
-      "quote_volume_24h": 13723003.25,
+      "quote_volume_24h": 13722189.87,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2570,6 +2976,10 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN"
       }
     },
     {
@@ -2586,7 +2996,7 @@
       "support": 0.08057,
       "distance_resistance_pct": 0.27,
       "distance_support_pct": 1.96,
-      "quote_volume_24h": 13671545.3,
+      "quote_volume_24h": 13670012.89,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2602,6 +3012,11 @@
         "total_supply": 50000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2618,7 +3033,7 @@
       "support": 0.397,
       "distance_resistance_pct": 12.81,
       "distance_support_pct": 1.07,
-      "quote_volume_24h": 13592978.61,
+      "quote_volume_24h": 13615463.76,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2632,6 +3047,11 @@
         "total_supply": 400000000,
         "max_supply": 400000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -2648,7 +3068,7 @@
       "support": 1.379,
       "distance_resistance_pct": 0.57,
       "distance_support_pct": 0.93,
-      "quote_volume_24h": 8506932.13,
+      "quote_volume_24h": 8466598.48,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2664,6 +3084,11 @@
         "total_supply": 5236894510,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2680,10 +3105,15 @@
       "support": 91.78,
       "distance_resistance_pct": 0.82,
       "distance_support_pct": 0.12,
-      "quote_volume_24h": 7354249.29,
+      "quote_volume_24h": 7353755.65,
       "candle_close": 1789848899999,
       "reasons": [],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
+      }
     },
     {
       "symbol": "WLFIUSDT",
@@ -2699,7 +3129,7 @@
       "support": 0.0583,
       "distance_resistance_pct": 2.57,
       "distance_support_pct": 0.0,
-      "quote_volume_24h": 5244320.56,
+      "quote_volume_24h": 5243696.25,
       "candle_close": 1789848899999,
       "reasons": [
         "נפח מוגבר"
@@ -2715,6 +3145,11 @@
         "total_supply": 100000000000,
         "max_supply": 100000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2731,7 +3166,7 @@
       "support": 0.04298,
       "distance_resistance_pct": 1.75,
       "distance_support_pct": 0.78,
-      "quote_volume_24h": 4932068.82,
+      "quote_volume_24h": 4932210.6,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2745,6 +3180,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2761,7 +3201,7 @@
       "support": 4364.16,
       "distance_resistance_pct": 0.16,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 4918354.71,
+      "quote_volume_24h": 4916507.48,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2777,6 +3217,11 @@
         "total_supply": 434499,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2793,7 +3238,7 @@
       "support": 0.4121,
       "distance_resistance_pct": 0.84,
       "distance_support_pct": 1.53,
-      "quote_volume_24h": 4907178.77,
+      "quote_volume_24h": 4906489.03,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2809,6 +3254,11 @@
         "total_supply": 1103647561,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2825,7 +3275,7 @@
       "support": 5.234,
       "distance_resistance_pct": 2.85,
       "distance_support_pct": 0.72,
-      "quote_volume_24h": 4465753.38,
+      "quote_volume_24h": 4483119.73,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2839,6 +3289,11 @@
         "total_supply": 19250000,
         "max_supply": 19250000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -2855,7 +3310,7 @@
       "support": 0.234,
       "distance_resistance_pct": 7.29,
       "distance_support_pct": 0.76,
-      "quote_volume_24h": 4135571.48,
+      "quote_volume_24h": 4135716.95,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2869,6 +3324,11 @@
         "total_supply": 785499999,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2885,7 +3345,7 @@
       "support": 0.3366,
       "distance_resistance_pct": 1.24,
       "distance_support_pct": 0.97,
-      "quote_volume_24h": 3948186.4,
+      "quote_volume_24h": 3948117.15,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2899,6 +3359,11 @@
         "total_supply": 2194424128,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2915,7 +3380,7 @@
       "support": 0.4655,
       "distance_resistance_pct": 0.21,
       "distance_support_pct": 3.74,
-      "quote_volume_24h": 3430700.79,
+      "quote_volume_24h": 3431573.89,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2931,6 +3396,11 @@
         "total_supply": 999999768,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -2947,7 +3417,7 @@
       "support": 0.2075,
       "distance_resistance_pct": 2.6,
       "distance_support_pct": 6.83,
-      "quote_volume_24h": 3106795.6,
+      "quote_volume_24h": 3115789.39,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -2963,6 +3433,11 @@
         "total_supply": 500000000,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -2979,7 +3454,7 @@
       "support": 0.00642,
       "distance_resistance_pct": 1.39,
       "distance_support_pct": 0.62,
-      "quote_volume_24h": 3062873.04,
+      "quote_volume_24h": 3060440.56,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -2993,6 +3468,11 @@
         "total_supply": 10000000000,
         "max_supply": 10000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -3009,7 +3489,7 @@
       "support": 0.00427,
       "distance_resistance_pct": 2.64,
       "distance_support_pct": 5.95,
-      "quote_volume_24h": 2686202.69,
+      "quote_volume_24h": 2684774.34,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3025,6 +3505,11 @@
         "total_supply": 8400000000,
         "max_supply": 9660000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -3041,12 +3526,17 @@
       "support": 221.82,
       "distance_resistance_pct": 0.09,
       "distance_support_pct": 0.11,
-      "quote_volume_24h": 2635293.96,
+      "quote_volume_24h": 2633955.18,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
       ],
-      "fundamental": null
+      "fundamental": null,
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
+      }
     },
     {
       "symbol": "DOGEUSDT",
@@ -3062,7 +3552,7 @@
       "support": 0.08845,
       "distance_resistance_pct": 2.66,
       "distance_support_pct": 0.6,
-      "quote_volume_24h": 87477334.94,
+      "quote_volume_24h": 87388532.78,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3076,6 +3566,11 @@
         "total_supply": 155723666384,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -3092,7 +3587,7 @@
       "support": 1.0,
       "distance_resistance_pct": 0.0,
       "distance_support_pct": 0.02,
-      "quote_volume_24h": 21985044.47,
+      "quote_volume_24h": 21978848.51,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3108,6 +3603,11 @@
         "total_supply": 709899988,
         "max_supply": 0,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "DOWN",
+        "4h": "DOWN",
+        "1d": "UP"
       }
     },
     {
@@ -3124,7 +3624,7 @@
       "support": 253.4,
       "distance_resistance_pct": 0.78,
       "distance_support_pct": 0.59,
-      "quote_volume_24h": 20512730.93,
+      "quote_volume_24h": 20510803.74,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3140,6 +3640,11 @@
         "total_supply": 20064144,
         "max_supply": 21000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "DOWN"
       }
     },
     {
@@ -3156,7 +3661,7 @@
       "support": 0.1466,
       "distance_resistance_pct": 0.47,
       "distance_support_pct": 1.08,
-      "quote_volume_24h": 3967172.69,
+      "quote_volume_24h": 3966818.98,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3172,6 +3677,11 @@
         "total_supply": 1000000000,
         "max_supply": 1000000000,
         "source": "CoinPaprika"
+      },
+      "trend_context": {
+        "1h": "UP",
+        "4h": "UP",
+        "1d": "UP"
       }
     },
     {
@@ -3188,7 +3698,7 @@
       "support": 3.403,
       "distance_resistance_pct": 3.63,
       "distance_support_pct": 4.22,
-      "quote_volume_24h": 192874597.96,
+      "quote_volume_24h": 192813998.55,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3218,7 +3728,7 @@
       "support": 2.048,
       "distance_resistance_pct": 2.33,
       "distance_support_pct": 4.74,
-      "quote_volume_24h": 26077785.66,
+      "quote_volume_24h": 26095498.08,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3248,7 +3758,7 @@
       "support": 58.17,
       "distance_resistance_pct": 1.56,
       "distance_support_pct": 1.31,
-      "quote_volume_24h": 22691555.43,
+      "quote_volume_24h": 22691226.42,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3278,7 +3788,7 @@
       "support": 0.3542,
       "distance_resistance_pct": 6.93,
       "distance_support_pct": 5.9,
-      "quote_volume_24h": 20780406.0,
+      "quote_volume_24h": 20791220.31,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3308,7 +3818,7 @@
       "support": 0.1207,
       "distance_resistance_pct": 1.46,
       "distance_support_pct": 2.27,
-      "quote_volume_24h": 16292542.98,
+      "quote_volume_24h": 16289913.44,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3338,7 +3848,7 @@
       "support": 0.10383,
       "distance_resistance_pct": 1.99,
       "distance_support_pct": 0.99,
-      "quote_volume_24h": 9824298.6,
+      "quote_volume_24h": 9813764.09,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3368,7 +3878,7 @@
       "support": 1.715,
       "distance_resistance_pct": 0.92,
       "distance_support_pct": 0.92,
-      "quote_volume_24h": 3917399.46,
+      "quote_volume_24h": 3921960.93,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3398,7 +3908,7 @@
       "support": 0.1043,
       "distance_resistance_pct": 1.93,
       "distance_support_pct": 4.14,
-      "quote_volume_24h": 2975019.92,
+      "quote_volume_24h": 2974931.35,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3458,7 +3968,7 @@
       "support": 7.348,
       "distance_resistance_pct": 1.84,
       "distance_support_pct": 6.57,
-      "quote_volume_24h": 32614461.45,
+      "quote_volume_24h": 32622754.96,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות",
@@ -3491,7 +4001,7 @@
       "support": 1.1494,
       "distance_resistance_pct": 0.01,
       "distance_support_pct": 0.03,
-      "quote_volume_24h": 20271151.3,
+      "quote_volume_24h": 20276849.54,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3512,7 +4022,7 @@
       "support": 0.0966,
       "distance_resistance_pct": 6.96,
       "distance_support_pct": 1.13,
-      "quote_volume_24h": 13848301.12,
+      "quote_volume_24h": 13847659.81,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": null
@@ -3531,7 +4041,7 @@
       "support": 2.584,
       "distance_resistance_pct": 5.05,
       "distance_support_pct": 0.42,
-      "quote_volume_24h": 13493015.08,
+      "quote_volume_24h": 13492613.4,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3561,7 +4071,7 @@
       "support": 0.4463,
       "distance_resistance_pct": 2.54,
       "distance_support_pct": 15.47,
-      "quote_volume_24h": 6414885.61,
+      "quote_volume_24h": 6417764.61,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3593,7 +4103,7 @@
       "support": 0.1151,
       "distance_resistance_pct": 0.58,
       "distance_support_pct": 2.84,
-      "quote_volume_24h": 5427762.69,
+      "quote_volume_24h": 5431691.36,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
@@ -3625,7 +4135,7 @@
       "support": 0.01098,
       "distance_resistance_pct": 3.26,
       "distance_support_pct": 0.45,
-      "quote_volume_24h": 3817067.81,
+      "quote_volume_24h": 3816490.17,
       "candle_close": 1789848899999,
       "reasons": [],
       "fundamental": {
@@ -3655,7 +4165,7 @@
       "support": 0.9998,
       "distance_resistance_pct": 0.01,
       "distance_support_pct": 0.01,
-      "quote_volume_24h": 3530011.42,
+      "quote_volume_24h": 3527417.95,
       "candle_close": 1789848899999,
       "reasons": [
         "קרוב להתנגדות"
