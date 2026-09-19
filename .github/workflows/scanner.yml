@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ['scanner.py','paper.py','docs/index.html','.github/workflows/scanner.yml']
   schedule:
-    - cron: '3/10 * * * *'
+    - cron: '7/10 * * * *'
 permissions:
   contents: write
 concurrency:
