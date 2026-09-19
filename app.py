@@ -1,65 +1,180 @@
 #!/usr/bin/env python3
-import os,json,time,threading,urllib.request,urllib.parse,sqlite3,hashlib,secrets
-from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
+"""Small read-only dashboard server; importing this module starts no services."""
+from __future__ import annotations
+
+import copy
+import datetime as dt
+import json
+import os
+import sqlite3
+import threading
+import time
+import urllib.parse
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from typing import Any, Callable
 
-PORT=int(os.getenv("PORT","8000")); DB=os.getenv("DB_PATH","/tmp/observer.sqlite3")
-SYMBOLS=["BTCUSDT","ETHUSDT"]; INTERVAL="1m"
-Path(DB).parent.mkdir(parents=True,exist_ok=True)
-db=sqlite3.connect(DB,check_same_thread=False); lock=threading.RLock()
-db.execute("""create table if not exists ticks(ts integer,symbol text,price real,signal text,reason text,primary key(ts,symbol))"""); db.execute("""create table if not exists events(ts integer,level text,message text)"""); db.commit()
-state={"running":True,"last_update":0,"error":None,"prices":{}}
-def ema(xs,n):
-    if not xs:return 0
-    a=2/(n+1); v=xs[0]
-    for x in xs[1:]:v=x*a+v*(1-a)
-    return v
-def fetch(symbol):
-    u="https://api.binance.com/api/v3/klines?"+urllib.parse.urlencode({"symbol":symbol,"interval":INTERVAL,"limit":80})
-    with urllib.request.urlopen(u,timeout=10) as r:return json.load(r)
-def worker():
-    while True:
-      if state["running"]:
-       try:
-        now=int(time.time()*1000)
-        for s in SYMBOLS:
-          rows=fetch(s); closed=[r for r in rows if int(r[6])<now]; closes=[float(r[4]) for r in closed]
-          if len(closes)<30:continue
-          fast,slow=ema(closes[-30:],9),ema(closes[-40:],21)
-          sig="מעקב"; reason=f"EMA9={fast:.2f}, EMA21={slow:.2f} — תצפית בלבד"
-          price=closes[-1]; ts=int(closed[-1][6])
-          with lock:
-           db.execute("insert or ignore into ticks values(?,?,?,?,?)",(ts,s,price,sig,reason)); db.commit()
-          state["prices"][s]=price
-        state["last_update"]=int(time.time()); state["error"]=None
-       except Exception as e:
-        state["error"]=type(e).__name__
-        with lock: db.execute("insert into events values(?,?,?)",(int(time.time()),"ERROR",type(e).__name__)); db.commit()
-      time.sleep(15)
-threading.Thread(target=worker,daemon=True).start()
+from collector import collect_snapshot, error_text
 
-HTML=r'''<!doctype html><html dir="rtl" lang="he"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Binance Observer</title><style>
-body{font-family:system-ui;background:#0b1020;color:#eef2ff;margin:0}.wrap{max-width:900px;margin:auto;padding:20px}.top,.card{background:#151c31;border:1px solid #29334f;border-radius:18px;padding:18px;margin:12px 0}.top{display:flex;justify-content:space-between;gap:12px;align-items:center}.badge{background:#123d32;color:#7fffc9;padding:7px 12px;border-radius:99px}.warn{background:#3c2d12;color:#ffd982;padding:12px;border-radius:12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.price{font-size:30px;font-weight:800}button{border:0;border-radius:10px;padding:10px 16px;font-weight:700}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #29334f;text-align:right}@media(max-width:600px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.price{font-size:25px}}
-</style><div class="wrap"><div class="top"><div><h1>Binance Observer</h1><div>ניטור ותיעוד בלבד — אין קנייה, מכירה או גישה לחשבון</div></div><span class="badge">OBSERVE ONLY</span></div>
-<div class="warn">המערכת קוראת נתוני שוק ציבוריים בלבד. אין בה API לביצוע עסקאות.</div><div id="status" class="card">טוען…</div><div id="cards" class="grid"></div><div class="card"><h2>תיעוד אחרון</h2><table><thead><tr><th>זמן</th><th>זוג</th><th>מחיר</th><th>החלטה</th></tr></thead><tbody id="rows"></tbody></table></div></div>
-<script>
-async function refresh(){let r=await fetch('/api/state');let x=await r.json();document.getElementById('status').innerHTML='<b>מנוע:</b> '+(x.running?'פעיל':'מושהה')+' · <b>עדכון:</b> '+(x.last_update?new Date(x.last_update*1000).toLocaleString('he-IL'):'ממתין')+(x.error?' · שגיאת חיבור: '+x.error:'');document.getElementById('cards').innerHTML=Object.entries(x.prices).map(([s,p])=>'<div class="card"><b>'+s+'</b><div class="price">'+Number(p).toLocaleString()+'</div><small>נר סגור · Binance Spot</small></div>').join('');let q=await fetch('/api/log');let d=await q.json();document.getElementById('rows').innerHTML=d.rows.map(a=>'<tr><td>'+new Date(a[0]).toLocaleString('he-IL')+'</td><td>'+a[1]+'</td><td>'+Number(a[2]).toLocaleString()+'</td><td>'+a[3]+'</td></tr>').join('')}refresh();setInterval(refresh,15000)
-</script></html>'''
-class H(BaseHTTPRequestHandler):
- def log_message(self,*a):pass
- def hdr(self,c=200,k="application/json; charset=utf-8"):
-  self.send_response(c);self.send_header("Content-Type",k);self.send_header("Cache-Control","no-store");self.send_header("X-Content-Type-Options","nosniff");self.send_header("X-Frame-Options","DENY");self.end_headers()
- def do_GET(self):
-  if self.path=="/":
-   self.hdr(200,"text/html; charset=utf-8");self.wfile.write(HTML.encode());return
-  if self.path=="/api/health":
-   self.hdr();self.wfile.write(json.dumps({"ok":True,"execution":"NOT_IMPLEMENTED"}).encode());return
-  if self.path=="/api/state":
-   self.hdr();self.wfile.write(json.dumps(state,ensure_ascii=False).encode());return
-  if self.path=="/api/log":
-   with lock: rows=db.execute("select ts,symbol,price,signal from ticks order by ts desc limit 50").fetchall()
-   self.hdr();self.wfile.write(json.dumps({"rows":rows},ensure_ascii=False).encode());return
-  self.hdr(404);self.wfile.write(b'{"error":"not found"}')
- def do_POST(self): self.hdr(405);self.wfile.write(b'{"error":"observe only"}')
- do_PUT=do_POST;do_DELETE=do_POST;do_PATCH=do_POST
-ThreadingHTTPServer(("0.0.0.0",PORT),H).serve_forever()
+ROOT = Path(__file__).resolve().parent
+
+
+class Observer:
+    def __init__(self, database: str = "/tmp/observer.sqlite3", *, fetcher: Callable | None = None):
+        if database != ":memory:":
+            Path(database).parent.mkdir(parents=True, exist_ok=True)
+        self.db = sqlite3.connect(database, check_same_thread=False)
+        self.lock = threading.RLock()
+        self.stop = threading.Event()
+        self.thread: threading.Thread | None = None
+        self.fetcher = fetcher
+        self.snapshot: dict[str, Any] = {
+            "mode": "OBSERVE_ONLY", "execution": "NOT_IMPLEMENTED", "interval": "1m",
+            "status": "waiting", "updated_at": None, "last_attempt_at": None,
+            "stale_after_seconds": 180, "symbols": {}, "errors": {},
+        }
+        self.db.execute("create table if not exists ticks(ts integer,symbol text,price real,signal text,reason text,primary key(ts,symbol))")
+        self.db.execute("create table if not exists events(ts integer,level text,message text)")
+        self.db.commit()
+
+    def refresh(self, now_ms: int | None = None) -> dict:
+        snapshot = collect_snapshot(self.read(), interval="1m", now_ms=now_ms, fetcher=self.fetcher)
+        with self.lock:
+            for symbol, value in snapshot["symbols"].items():
+                if value.get("stale"):
+                    continue
+                reason = f"EMA9={value['ema9']}, EMA21={value['ema21']} — observation only"
+                self.db.execute("insert or ignore into ticks values(?,?,?,?,?)",
+                                (value["candle_close"], symbol, value["price"], "מעקב", reason))
+            if snapshot["errors"]:
+                self.db.execute("insert into events values(?,?,?)", (int(time.time()), "ERROR",
+                                json.dumps(snapshot["errors"])))
+            self.db.execute("delete from ticks where rowid not in (select rowid from ticks order by ts desc limit 10000)")
+            self.db.execute("delete from events where rowid not in (select rowid from events order by rowid desc limit 1000)")
+            self.db.commit()
+            self.snapshot = snapshot
+        return self.read()
+
+    def read(self) -> dict:
+        with self.lock:
+            return copy.deepcopy(self.snapshot)
+
+    def rows(self) -> list:
+        with self.lock:
+            return self.db.execute("select ts,symbol,price,signal from ticks order by ts desc,symbol limit 50").fetchall()
+
+    def state(self) -> dict:
+        snapshot = self.read()
+        updated_at = snapshot.get("updated_at")
+        last_update = int(dt.datetime.fromisoformat(updated_at).timestamp()) if updated_at else 0
+        return {
+            "running": bool(self.thread and self.thread.is_alive()),
+            "last_update": last_update,
+            "error": "; ".join(snapshot["errors"].values()) or None,
+            "prices": {s: v["price"] for s, v in snapshot["symbols"].items()},
+            "snapshot": snapshot,
+        }
+
+    def health(self) -> dict:
+        snapshot = self.read()
+        cutoff = int(time.time() * 1000) - snapshot["stale_after_seconds"] * 1000
+        data_ok = snapshot["status"] == "ok" and all(
+            int(value["candle_close"]) > cutoff and not value.get("stale")
+            for value in snapshot["symbols"].values()
+        )
+        return {"ok": True, "data_ok": data_ok, "status": snapshot["status"],
+                "mode": "OBSERVE_ONLY", "execution": "NOT_IMPLEMENTED",
+                "account_access": False, "last_attempt_at": snapshot["last_attempt_at"]}
+
+    def start(self) -> None:
+        if self.thread and self.thread.is_alive():
+            return
+        self.stop.clear()
+        def work() -> None:
+            while not self.stop.is_set():
+                try:
+                    self.refresh()
+                except Exception as exc:
+                    with self.lock:
+                        self.snapshot["status"] = "error"
+                        self.snapshot["errors"]["runtime"] = error_text(exc)
+                self.stop.wait(15)
+        self.thread = threading.Thread(target=work, name="market-observer", daemon=True)
+        self.thread.start()
+
+    def close(self) -> None:
+        self.stop.set()
+        if self.thread:
+            self.thread.join(timeout=75)
+        with self.lock:
+            self.db.close()
+
+
+def make_handler(observer: Observer) -> type[BaseHTTPRequestHandler]:
+    class Handler(BaseHTTPRequestHandler):
+        def log_message(self, *args) -> None:
+            pass
+
+        def respond(self, status: int, body: bytes, content_type: str = "application/json; charset=utf-8") -> None:
+            self.send_response(status)
+            for name, value in {
+                "Content-Type": content_type, "Content-Length": str(len(body)),
+                "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "DENY", "Referrer-Policy": "no-referrer",
+                "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'",
+            }.items():
+                self.send_header(name, value)
+            if status == 405:
+                self.send_header("Allow", "GET, HEAD")
+            self.end_headers()
+            if self.command != "HEAD":
+                self.wfile.write(body)
+
+        def do_GET(self) -> None:
+            path = urllib.parse.urlsplit(self.path).path
+            if path == "/favicon.ico":
+                self.respond(204, b"", "image/x-icon")
+                return
+            if path == "/":
+                self.respond(200, (ROOT / "docs" / "index.html").read_bytes(), "text/html; charset=utf-8")
+                return
+            routes = {
+                "/data.json": observer.read, "/api/state": observer.state,
+                "/api/health": observer.health, "/api/log": lambda: {"rows": observer.rows()},
+            }
+            if path == "/history.jsonl":
+                body = "".join(json.dumps({"candle_close": row[0], "symbol": row[1],
+                                         "price": row[2], "mode": "OBSERVE_ONLY"}) + "\n"
+                               for row in observer.rows()).encode()
+                self.respond(200, body, "application/x-ndjson; charset=utf-8")
+                return
+            if path not in routes:
+                self.respond(404, b'{"error":"not found"}')
+                return
+            self.respond(200, json.dumps(routes[path](), ensure_ascii=False, allow_nan=False).encode())
+
+        do_HEAD = do_GET
+
+        def do_POST(self) -> None:
+            self.respond(405, b'{"error":"observe only"}')
+
+        do_PUT = do_DELETE = do_PATCH = do_OPTIONS = do_POST
+    return Handler
+
+
+def main() -> None:
+    observer = Observer(os.getenv("DB_PATH", "/tmp/observer.sqlite3"))
+    server = ThreadingHTTPServer(("0.0.0.0", int(os.getenv("PORT", "8000"))), make_handler(observer))
+    observer.start()
+    try:
+        print(f"Binance Observer listening on port {server.server_port}", flush=True)
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
+        observer.close()
+
+
+if __name__ == "__main__":
+    main()

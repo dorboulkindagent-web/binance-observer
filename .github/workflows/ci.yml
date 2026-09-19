@@ -1,0 +1,59 @@
+name: Test observer
+on:
+  push:
+    paths-ignore: ['docs/data.json', 'docs/history.jsonl']
+  pull_request:
+    paths-ignore: ['docs/data.json', 'docs/history.jsonl']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+  live-data:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the public market-data connection
+        run: python collector.py
+      - name: Preserve live-check result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-market-check
+          path: docs/data.json
+          retention-days: 3
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright==1.57.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/browser_smoke.py
+      - name: Store browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-evidence
+          path: artifacts/
+          retention-days: 3
