@@ -1,16 +1,6 @@
 {
-  "cash": 1311.5789473684213,
+  "cash": 2627.886352193894,
   "positions": {
-    "SEIUSDT": {
-      "symbol": "SEIUSDT",
-      "entry": 0.0501,
-      "qty": 39920.159680638724,
-      "stop": 0.04894,
-      "target": 0.05242,
-      "atr_pct": 0.59,
-      "opened_at": "2026-09-19T20:26:41.492146+00:00",
-      "mode": "PAPER"
-    },
     "ENAUSDT": {
       "symbol": "ENAUSDT",
       "entry": 0.2069,
@@ -50,12 +40,37 @@
       "atr_pct": 0.93,
       "opened_at": "2026-09-19T20:26:41.492146+00:00",
       "mode": "PAPER"
+    },
+    "GENIUSUSDT": {
+      "symbol": "GENIUSUSDT",
+      "entry": 0.3708,
+      "qty": 1608.0567569415566,
+      "stop": 0.3307,
+      "target": 0.45100000000000007,
+      "atr_pct": 2.57,
+      "opened_at": "2026-09-20T05:12:33.175637+00:00",
+      "mode": "PAPER"
     }
   },
-  "closed": [],
-  "equity": 9996.55,
-  "return_pct": -0.03,
+  "closed": [
+    {
+      "symbol": "SEIUSDT",
+      "entry": 0.0501,
+      "qty": 39920.159680638724,
+      "stop": 0.04894,
+      "target": 0.05242,
+      "atr_pct": 0.59,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER",
+      "exit": 0.04791,
+      "pnl": -87.43,
+      "exit_reason": "STOP",
+      "closed_at": "2026-09-20T05:12:33.175637+00:00"
+    }
+  ],
+  "equity": 9839.07,
+  "return_pct": -1.61,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-20T00:20:28.285902+00:00"
+  "updated_at": "2026-09-20T05:12:33.285004+00:00"
 }
