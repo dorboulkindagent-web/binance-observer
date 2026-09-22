@@ -1,5 +1,5 @@
 {
-  "cash": 4137.2622822760795,
+  "cash": 4034.227526955759,
   "positions": {
     "ENAUSDT": {
       "symbol": "ENAUSDT",
@@ -8,16 +8,6 @@
       "stop": 0.1949,
       "target": 0.23090000000000002,
       "atr_pct": 1.7,
-      "opened_at": "2026-09-19T20:26:41.492146+00:00",
-      "mode": "PAPER"
-    },
-    "SNDKBUSDT": {
-      "symbol": "SNDKBUSDT",
-      "entry": 1784.28,
-      "qty": 1.120900307126684,
-      "stop": 1766.4371999999998,
-      "target": 1819.9656000000002,
-      "atr_pct": 0.08,
       "opened_at": "2026-09-19T20:26:41.492146+00:00",
       "mode": "PAPER"
     },
@@ -50,6 +40,16 @@
       "atr_pct": 2.58,
       "opened_at": "2026-09-20T17:23:51.900152+00:00",
       "mode": "PAPER"
+    },
+    "FLOKIUSDT": {
+      "symbol": "FLOKIUSDT",
+      "entry": 3.025e-05,
+      "qty": 68667702.58648102,
+      "stop": 2.847e-05,
+      "target": 3.381e-05,
+      "atr_pct": 1.69,
+      "opened_at": "2026-09-22T07:17:38.638912+00:00",
+      "mode": "PAPER"
     }
   },
   "closed": [
@@ -80,11 +80,25 @@
       "pnl": 193.36,
       "exit_reason": "TARGET",
       "closed_at": "2026-09-20T17:23:51.900152+00:00"
+    },
+    {
+      "symbol": "SNDKBUSDT",
+      "entry": 1784.28,
+      "qty": 1.120900307126684,
+      "stop": 1766.4371999999998,
+      "target": 1819.9656000000002,
+      "atr_pct": 0.08,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER",
+      "exit": 1761.23,
+      "pnl": -25.84,
+      "exit_reason": "STOP",
+      "closed_at": "2026-09-22T07:17:38.638912+00:00"
     }
   ],
-  "equity": 10163.26,
-  "return_pct": 1.63,
+  "equity": 10126.5,
+  "return_pct": 1.26,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-22T01:54:11.612055+00:00"
+  "updated_at": "2026-09-22T07:17:38.845167+00:00"
 }
