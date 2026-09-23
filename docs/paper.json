@@ -1,5 +1,5 @@
 {
-  "cash": 5902.675714333907,
+  "cash": 5280.713049722415,
   "positions": {
     "ENAUSDT": {
       "symbol": "ENAUSDT",
@@ -39,6 +39,16 @@
       "target": 6.228999999999999,
       "atr_pct": 2.58,
       "opened_at": "2026-09-20T17:23:51.900152+00:00",
+      "mode": "PAPER"
+    },
+    "NILUSDT": {
+      "symbol": "NILUSDT",
+      "entry": 0.11617,
+      "qty": 5353.9008746792815,
+      "stop": 0.09412,
+      "target": 0.16027,
+      "atr_pct": 3.82,
+      "opened_at": "2026-09-23T23:09:37.637581+00:00",
       "mode": "PAPER"
     }
   },
@@ -100,9 +110,9 @@
       "closed_at": "2026-09-23T17:18:54.965247+00:00"
     }
   ],
-  "equity": 9784.51,
-  "return_pct": -2.15,
+  "equity": 9779.11,
+  "return_pct": -2.21,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-23T20:31:53.494394+00:00"
+  "updated_at": "2026-09-23T23:09:37.930036+00:00"
 }
