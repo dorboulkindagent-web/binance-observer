@@ -1,5 +1,5 @@
 {
-  "cash": 4034.227526955759,
+  "cash": 5902.675714333907,
   "positions": {
     "ENAUSDT": {
       "symbol": "ENAUSDT",
@@ -39,16 +39,6 @@
       "target": 6.228999999999999,
       "atr_pct": 2.58,
       "opened_at": "2026-09-20T17:23:51.900152+00:00",
-      "mode": "PAPER"
-    },
-    "FLOKIUSDT": {
-      "symbol": "FLOKIUSDT",
-      "entry": 3.025e-05,
-      "qty": 68667702.58648102,
-      "stop": 2.847e-05,
-      "target": 3.381e-05,
-      "atr_pct": 1.69,
-      "opened_at": "2026-09-22T07:17:38.638912+00:00",
       "mode": "PAPER"
     }
   },
@@ -94,11 +84,25 @@
       "pnl": -25.84,
       "exit_reason": "STOP",
       "closed_at": "2026-09-22T07:17:38.638912+00:00"
+    },
+    {
+      "symbol": "FLOKIUSDT",
+      "entry": 3.025e-05,
+      "qty": 68667702.58648102,
+      "stop": 2.847e-05,
+      "target": 3.381e-05,
+      "atr_pct": 1.69,
+      "opened_at": "2026-09-22T07:17:38.638912+00:00",
+      "mode": "PAPER",
+      "exit": 2.721e-05,
+      "pnl": -208.75,
+      "exit_reason": "STOP",
+      "closed_at": "2026-09-23T17:18:54.965247+00:00"
     }
   ],
-  "equity": 10019.67,
-  "return_pct": 0.2,
+  "equity": 9871.35,
+  "return_pct": -1.29,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-23T12:19:23.546486+00:00"
+  "updated_at": "2026-09-23T17:18:55.621618+00:00"
 }
