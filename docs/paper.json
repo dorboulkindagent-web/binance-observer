@@ -1,16 +1,6 @@
 {
-  "cash": 5280.713049722415,
+  "cash": 4707.640908015283,
   "positions": {
-    "ENAUSDT": {
-      "symbol": "ENAUSDT",
-      "entry": 0.2069,
-      "qty": 9666.505558240697,
-      "stop": 0.1949,
-      "target": 0.23090000000000002,
-      "atr_pct": 1.7,
-      "opened_at": "2026-09-19T20:26:41.492146+00:00",
-      "mode": "PAPER"
-    },
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
       "entry": 0.00654,
@@ -49,6 +39,16 @@
       "target": 0.16027,
       "atr_pct": 3.82,
       "opened_at": "2026-09-23T23:09:37.637581+00:00",
+      "mode": "PAPER"
+    },
+    "XRPUSDT": {
+      "symbol": "XRPUSDT",
+      "entry": 1.603,
+      "qty": 1816.219486117004,
+      "stop": 1.5191,
+      "target": 1.7708000000000002,
+      "atr_pct": 0.86,
+      "opened_at": "2026-09-25T12:22:36.228862+00:00",
       "mode": "PAPER"
     }
   },
@@ -108,11 +108,25 @@
       "pnl": -208.75,
       "exit_reason": "STOP",
       "closed_at": "2026-09-23T17:18:54.965247+00:00"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "entry": 0.2069,
+      "qty": 9666.505558240697,
+      "stop": 0.1949,
+      "target": 0.23090000000000002,
+      "atr_pct": 1.7,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER",
+      "exit": 0.2419,
+      "pnl": 338.33,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-09-25T12:22:36.228862+00:00"
     }
   ],
-  "equity": 9778.6,
-  "return_pct": -2.21,
+  "equity": 10327.94,
+  "return_pct": 3.28,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-25T06:45:54.276402+00:00"
+  "updated_at": "2026-09-25T12:22:36.397423+00:00"
 }
