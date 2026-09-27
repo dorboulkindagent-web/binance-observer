@@ -1,5 +1,5 @@
 {
-  "cash": 4707.640908015283,
+  "cash": 6162.558971221668,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-09-23T23:09:37.637581+00:00",
       "mode": "PAPER"
     },
-    "XRPUSDT": {
-      "symbol": "XRPUSDT",
-      "entry": 1.603,
-      "qty": 1816.219486117004,
-      "stop": 1.5191,
-      "target": 1.7708000000000002,
-      "atr_pct": 0.86,
-      "opened_at": "2026-09-25T12:22:36.228862+00:00",
+    "QNTUSDT": {
+      "symbol": "QNTUSDT",
+      "entry": 177.75,
+      "qty": 7.308104324010285,
+      "stop": 157.33,
+      "target": 218.58999999999997,
+      "atr_pct": 2.8,
+      "opened_at": "2026-09-27T15:47:25.576318+00:00",
       "mode": "PAPER"
     }
   },
@@ -122,11 +122,25 @@
       "pnl": 338.33,
       "exit_reason": "TARGET",
       "closed_at": "2026-09-25T12:22:36.228862+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "entry": 1.603,
+      "qty": 1816.219486117004,
+      "stop": 1.5191,
+      "target": 1.7708000000000002,
+      "atr_pct": 0.86,
+      "opened_at": "2026-09-25T12:22:36.228862+00:00",
+      "mode": "PAPER",
+      "exit": 1.5163,
+      "pnl": -157.47,
+      "exit_reason": "STOP",
+      "closed_at": "2026-09-27T15:47:25.576318+00:00"
     }
   ],
-  "equity": 10069.7,
-  "return_pct": 0.7,
+  "equity": 10000.36,
+  "return_pct": 0.0,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-27T11:21:22.824834+00:00"
+  "updated_at": "2026-09-27T15:47:25.781526+00:00"
 }
