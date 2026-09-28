@@ -1,5 +1,5 @@
 {
-  "cash": 0.0,
+  "cash": 1720.546770064805,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -31,16 +31,6 @@
       "opened_at": "2026-09-20T17:23:51.900152+00:00",
       "mode": "PAPER"
     },
-    "QNTUSDT": {
-      "symbol": "QNTUSDT",
-      "entry": 177.75,
-      "qty": 7.308104324010285,
-      "stop": 157.33,
-      "target": 218.58999999999997,
-      "atr_pct": 2.8,
-      "opened_at": "2026-09-27T15:47:25.576318+00:00",
-      "mode": "PAPER"
-    },
     "JSTUSDT": {
       "symbol": "JSTUSDT",
       "entry": 0.12679,
@@ -49,6 +39,16 @@
       "target": 0.13017000000000006,
       "atr_pct": 0.24,
       "opened_at": "2026-09-28T01:08:26.052967+00:00",
+      "mode": "PAPER"
+    },
+    "QNTUSDT": {
+      "symbol": "QNTUSDT",
+      "entry": 280.7,
+      "qty": 1.178618146365807,
+      "stop": 245.89,
+      "target": 350.32,
+      "atr_pct": 3.89,
+      "opened_at": "2026-09-28T06:51:33.818734+00:00",
       "mode": "PAPER"
     }
   },
@@ -150,11 +150,25 @@
       "pnl": -119.5,
       "exit_reason": "STOP",
       "closed_at": "2026-09-28T01:08:26.052967+00:00"
+    },
+    {
+      "symbol": "QNTUSDT",
+      "entry": 177.75,
+      "qty": 7.308104324010285,
+      "stop": 157.33,
+      "target": 218.58999999999997,
+      "atr_pct": 2.8,
+      "opened_at": "2026-09-27T15:47:25.576318+00:00",
+      "mode": "PAPER",
+      "exit": 280.7,
+      "pnl": 752.37,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-09-28T06:51:33.818734+00:00"
     }
   ],
-  "equity": 9902.59,
-  "return_pct": -0.97,
+  "equity": 10685.08,
+  "return_pct": 6.85,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-28T01:08:26.216554+00:00"
+  "updated_at": "2026-09-28T06:51:33.992114+00:00"
 }
