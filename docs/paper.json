@@ -1,5 +1,5 @@
 {
-  "cash": 1983.9089948702447,
+  "cash": 1443.4124486122937,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.13017000000000006,
       "atr_pct": 0.24,
       "opened_at": "2026-09-28T01:08:26.052967+00:00",
+      "mode": "PAPER"
+    },
+    "AEROUSDT": {
+      "symbol": "AEROUSDT",
+      "entry": 0.8541,
+      "qty": 632.8258356842888,
+      "stop": 0.7914,
+      "target": 0.9794999999999999,
+      "atr_pct": 0.97,
+      "opened_at": "2026-09-29T06:53:00.971095+00:00",
       "mode": "PAPER"
     }
   },
@@ -170,9 +180,9 @@
       "closed_at": "2026-09-29T01:03:50.576649+00:00"
     }
   ],
-  "equity": 10780.56,
-  "return_pct": 7.81,
+  "equity": 10681.34,
+  "return_pct": 6.81,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-29T01:03:50.741847+00:00"
+  "updated_at": "2026-09-29T06:53:01.162469+00:00"
 }
