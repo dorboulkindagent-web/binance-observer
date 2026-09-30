@@ -1,5 +1,5 @@
 {
-  "cash": 2014.2197894523301,
+  "cash": 6557.922735718584,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -21,16 +21,6 @@
       "opened_at": "2026-09-20T05:12:33.175637+00:00",
       "mode": "PAPER"
     },
-    "JSTUSDT": {
-      "symbol": "JSTUSDT",
-      "entry": 0.12679,
-      "qty": 52567.4151613717,
-      "stop": 0.1251,
-      "target": 0.13017000000000006,
-      "atr_pct": 0.24,
-      "opened_at": "2026-09-28T01:08:26.052967+00:00",
-      "mode": "PAPER"
-    },
     "AEROUSDT": {
       "symbol": "AEROUSDT",
       "entry": 0.8541,
@@ -39,6 +29,16 @@
       "target": 0.9794999999999999,
       "atr_pct": 0.97,
       "opened_at": "2026-09-29T06:53:00.971095+00:00",
+      "mode": "PAPER"
+    },
+    "STXUSDT": {
+      "symbol": "STXUSDT",
+      "entry": 0.3762,
+      "qty": 6533.096967243073,
+      "stop": 0.3486,
+      "target": 0.4313999999999999,
+      "atr_pct": 1.93,
+      "opened_at": "2026-09-30T23:15:41.436375+00:00",
       "mode": "PAPER"
     }
   },
@@ -182,11 +182,25 @@
       "pnl": -113.18,
       "exit_reason": "STOP",
       "closed_at": "2026-09-30T19:42:06.885409+00:00"
+    },
+    {
+      "symbol": "JSTUSDT",
+      "entry": 0.12679,
+      "qty": 52567.4151613717,
+      "stop": 0.1251,
+      "target": 0.13017000000000006,
+      "atr_pct": 0.24,
+      "opened_at": "2026-09-28T01:08:26.052967+00:00",
+      "mode": "PAPER",
+      "exit": 0.13319,
+      "pnl": 336.43,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-09-30T23:15:41.436375+00:00"
     }
   ],
-  "equity": 10471.46,
-  "return_pct": 4.71,
+  "equity": 10815.61,
+  "return_pct": 8.16,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-30T19:42:07.111147+00:00"
+  "updated_at": "2026-09-30T23:15:41.602616+00:00"
 }
