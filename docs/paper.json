@@ -1,5 +1,5 @@
 {
-  "cash": 6557.922735718584,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.4313999999999999,
       "atr_pct": 1.93,
       "opened_at": "2026-09-30T23:15:41.436375+00:00",
+      "mode": "PAPER"
+    },
+    "RLUSDUSDT": {
+      "symbol": "RLUSDUSDT",
+      "entry": 1.0008,
+      "qty": 6552.6805912455875,
+      "stop": 0.9907919999999999,
+      "target": 1.020816,
+      "atr_pct": 0.01,
+      "opened_at": "2026-10-01T02:15:23.617122+00:00",
       "mode": "PAPER"
     }
   },
@@ -198,9 +208,9 @@
       "closed_at": "2026-09-30T23:15:41.436375+00:00"
     }
   ],
-  "equity": 10815.61,
-  "return_pct": 8.16,
+  "equity": 10840.86,
+  "return_pct": 8.41,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-09-30T23:15:41.602616+00:00"
+  "updated_at": "2026-10-01T02:15:24.154120+00:00"
 }
