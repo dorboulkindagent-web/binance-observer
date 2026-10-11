@@ -1,5 +1,5 @@
 {
-  "cash": 423.12746451933276,
+  "cash": 370.3036499631432,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-10-01T02:15:23.617122+00:00",
       "mode": "PAPER"
     },
-    "MEGAUSDT": {
-      "symbol": "MEGAUSDT",
-      "entry": 0.05233,
-      "qty": 1384.2623238110798,
-      "stop": 0.04517,
-      "target": 0.06665,
-      "atr_pct": 2.42,
-      "opened_at": "2026-10-01T16:24:02.790438+00:00",
+    "CHIPUSDT": {
+      "symbol": "CHIPUSDT",
+      "entry": 0.06975,
+      "qty": 1647.624693940568,
+      "stop": 0.06386,
+      "target": 0.08153000000000002,
+      "atr_pct": 2.13,
+      "opened_at": "2026-10-11T14:39:52.728735+00:00",
       "mode": "PAPER"
     }
   },
@@ -220,11 +220,25 @@
       "pnl": -44.93,
       "exit_reason": "STOP",
       "closed_at": "2026-10-01T16:24:02.790438+00:00"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "entry": 0.05233,
+      "qty": 1384.2623238110798,
+      "stop": 0.04517,
+      "target": 0.06665,
+      "atr_pct": 2.42,
+      "opened_at": "2026-10-01T16:24:02.790438+00:00",
+      "mode": "PAPER",
+      "exit": 0.04486,
+      "pnl": -10.34,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-11T14:39:52.728735+00:00"
     }
   ],
-  "equity": 10925.29,
-  "return_pct": 9.25,
+  "equity": 10787.55,
+  "return_pct": 7.88,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-11T07:49:36.051525+00:00"
+  "updated_at": "2026-10-11T14:39:53.082826+00:00"
 }
