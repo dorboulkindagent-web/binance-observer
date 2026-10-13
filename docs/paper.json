@@ -1,5 +1,5 @@
 {
-  "cash": 3301.142588875257,
+  "cash": 269.0914788680511,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,6 +29,26 @@
       "target": 1.020816,
       "atr_pct": 0.01,
       "opened_at": "2026-10-01T02:15:23.617122+00:00",
+      "mode": "PAPER"
+    },
+    "OPUSDT": {
+      "symbol": "OPUSDT",
+      "entry": 0.1459,
+      "qty": 5741.117545870007,
+      "stop": 0.1344,
+      "target": 0.16890000000000002,
+      "atr_pct": 1.8,
+      "opened_at": "2026-10-13T16:18:22.626875+00:00",
+      "mode": "PAPER"
+    },
+    "WLFIUSDT": {
+      "symbol": "WLFIUSDT",
+      "entry": 0.0579,
+      "qty": 37900.208291274124,
+      "stop": 0.0566,
+      "target": 0.060500000000000005,
+      "atr_pct": 0.38,
+      "opened_at": "2026-10-13T16:18:22.626875+00:00",
       "mode": "PAPER"
     }
   },
@@ -244,9 +264,9 @@
       "closed_at": "2026-10-13T08:26:40.320299+00:00"
     }
   ],
-  "equity": 11147.03,
-  "return_pct": 11.47,
+  "equity": 11145.72,
+  "return_pct": 11.46,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-13T08:26:40.683323+00:00"
+  "updated_at": "2026-10-13T16:18:23.005390+00:00"
 }
