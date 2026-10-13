@@ -1,5 +1,5 @@
 {
-  "cash": 467.08512448521213,
+  "cash": 3301.142588875257,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -19,16 +19,6 @@
       "target": 0.45100000000000007,
       "atr_pct": 2.57,
       "opened_at": "2026-09-20T05:12:33.175637+00:00",
-      "mode": "PAPER"
-    },
-    "STXUSDT": {
-      "symbol": "STXUSDT",
-      "entry": 0.3762,
-      "qty": 6533.096967243073,
-      "stop": 0.3486,
-      "target": 0.4313999999999999,
-      "atr_pct": 1.93,
-      "opened_at": "2026-09-30T23:15:41.436375+00:00",
       "mode": "PAPER"
     },
     "RLUSDUSDT": {
@@ -238,11 +228,25 @@
       "pnl": -18.14,
       "exit_reason": "STOP",
       "closed_at": "2026-10-12T19:20:53.068581+00:00"
+    },
+    {
+      "symbol": "STXUSDT",
+      "entry": 0.3762,
+      "qty": 6533.096967243073,
+      "stop": 0.3486,
+      "target": 0.4313999999999999,
+      "atr_pct": 1.93,
+      "opened_at": "2026-09-30T23:15:41.436375+00:00",
+      "mode": "PAPER",
+      "exit": 0.4338,
+      "pnl": 376.31,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-10-13T08:26:40.320299+00:00"
     }
   ],
-  "equity": 11056.22,
-  "return_pct": 10.56,
+  "equity": 11147.03,
+  "return_pct": 11.47,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-13T01:32:19.315470+00:00"
+  "updated_at": "2026-10-13T08:26:40.683323+00:00"
 }
