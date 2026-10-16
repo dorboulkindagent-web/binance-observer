@@ -1,5 +1,5 @@
 {
-  "cash": 736.10686937884,
+  "cash": 729.4403060574714,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -9,16 +9,6 @@
       "target": 0.0073,
       "atr_pct": 0.93,
       "opened_at": "2026-09-19T20:26:41.492146+00:00",
-      "mode": "PAPER"
-    },
-    "GENIUSUSDT": {
-      "symbol": "GENIUSUSDT",
-      "entry": 0.3708,
-      "qty": 1608.0567569415566,
-      "stop": 0.3307,
-      "target": 0.45100000000000007,
-      "atr_pct": 2.57,
-      "opened_at": "2026-09-20T05:12:33.175637+00:00",
       "mode": "PAPER"
     },
     "RLUSDUSDT": {
@@ -49,6 +39,16 @@
       "target": 0.05405,
       "atr_pct": 1.81,
       "opened_at": "2026-10-15T05:35:44.236017+00:00",
+      "mode": "PAPER"
+    },
+    "ZKUSDT": {
+      "symbol": "ZKUSDT",
+      "entry": 0.01724,
+      "qty": 29460.43239327447,
+      "stop": 0.0164,
+      "target": 0.018919999999999992,
+      "atr_pct": 1.16,
+      "opened_at": "2026-10-16T05:10:39.149709+00:00",
       "mode": "PAPER"
     }
   },
@@ -276,11 +276,25 @@
       "pnl": -87.26,
       "exit_reason": "STOP",
       "closed_at": "2026-10-15T05:35:44.236017+00:00"
+    },
+    {
+      "symbol": "GENIUSUSDT",
+      "entry": 0.3708,
+      "qty": 1608.0567569415566,
+      "stop": 0.3307,
+      "target": 0.45100000000000007,
+      "atr_pct": 2.57,
+      "opened_at": "2026-09-20T05:12:33.175637+00:00",
+      "mode": "PAPER",
+      "exit": 0.3117,
+      "pnl": -95.04,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-16T05:10:39.149709+00:00"
     }
   ],
-  "equity": 11020.11,
-  "return_pct": 10.2,
+  "equity": 10937.62,
+  "return_pct": 9.38,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-16T00:41:29.950756+00:00"
+  "updated_at": "2026-10-16T05:10:39.418391+00:00"
 }
