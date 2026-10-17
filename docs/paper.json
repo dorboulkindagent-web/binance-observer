@@ -1,5 +1,5 @@
 {
-  "cash": 729.4403060574714,
+  "cash": 647.9574017048973,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-10-15T05:35:44.236017+00:00",
       "mode": "PAPER"
     },
-    "ZKUSDT": {
-      "symbol": "ZKUSDT",
-      "entry": 0.01724,
-      "qty": 29460.43239327447,
-      "stop": 0.0164,
-      "target": 0.018919999999999992,
-      "atr_pct": 1.16,
-      "opened_at": "2026-10-16T05:10:39.149709+00:00",
+    "KMNOUSDT": {
+      "symbol": "KMNOUSDT",
+      "entry": 0.03969,
+      "qty": 14144.453213379067,
+      "stop": 0.03798,
+      "target": 0.04311000000000001,
+      "atr_pct": 1.18,
+      "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     }
   },
@@ -290,11 +290,25 @@
       "pnl": -95.04,
       "exit_reason": "STOP",
       "closed_at": "2026-10-16T05:10:39.149709+00:00"
+    },
+    {
+      "symbol": "ZKUSDT",
+      "entry": 0.01724,
+      "qty": 29460.43239327447,
+      "stop": 0.0164,
+      "target": 0.018919999999999992,
+      "atr_pct": 1.16,
+      "opened_at": "2026-10-16T05:10:39.149709+00:00",
+      "mode": "PAPER",
+      "exit": 0.01629,
+      "pnl": -27.99,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-17T02:58:31.305987+00:00"
     }
   ],
-  "equity": 10931.27,
-  "return_pct": 9.31,
+  "equity": 10899.36,
+  "return_pct": 8.99,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-16T23:55:08.098561+00:00"
+  "updated_at": "2026-10-17T02:58:31.775697+00:00"
 }
