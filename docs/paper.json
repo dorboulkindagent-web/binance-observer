@@ -1,5 +1,5 @@
 {
-  "cash": 908.4582767013683,
+  "cash": 370.7491885997458,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.04311000000000001,
       "atr_pct": 1.18,
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
+      "mode": "PAPER"
+    },
+    "SENTUSDT": {
+      "symbol": "SENTUSDT",
+      "entry": 0.0219,
+      "qty": 24552.92639733436,
+      "stop": 0.02116,
+      "target": 0.023379999999999995,
+      "atr_pct": 0.97,
+      "opened_at": "2026-10-18T21:57:22.266443+00:00",
       "mode": "PAPER"
     }
   },
@@ -310,9 +320,9 @@
       "closed_at": "2026-10-18T17:49:01.922511+00:00"
     }
   ],
-  "equity": 10912.58,
-  "return_pct": 9.13,
+  "equity": 10878.47,
+  "return_pct": 8.78,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-18T19:44:51.632157+00:00"
+  "updated_at": "2026-10-18T21:57:22.620822+00:00"
 }
