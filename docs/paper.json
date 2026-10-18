@@ -1,5 +1,5 @@
 {
-  "cash": 647.9574017048973,
+  "cash": 908.4582767013683,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,16 +29,6 @@
       "target": 0.060500000000000005,
       "atr_pct": 0.38,
       "opened_at": "2026-10-13T16:18:22.626875+00:00",
-      "mode": "PAPER"
-    },
-    "MEGAUSDT": {
-      "symbol": "MEGAUSDT",
-      "entry": 0.04725,
-      "qty": 5996.797306548594,
-      "stop": 0.04385,
-      "target": 0.05405,
-      "atr_pct": 1.81,
-      "opened_at": "2026-10-15T05:35:44.236017+00:00",
       "mode": "PAPER"
     },
     "KMNOUSDT": {
@@ -304,11 +294,25 @@
       "pnl": -27.99,
       "exit_reason": "STOP",
       "closed_at": "2026-10-17T02:58:31.305987+00:00"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "entry": 0.04725,
+      "qty": 5996.797306548594,
+      "stop": 0.04385,
+      "target": 0.05405,
+      "atr_pct": 1.81,
+      "opened_at": "2026-10-15T05:35:44.236017+00:00",
+      "mode": "PAPER",
+      "exit": 0.04344,
+      "pnl": -22.85,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-18T17:49:01.922511+00:00"
     }
   ],
-  "equity": 10895.57,
-  "return_pct": 8.96,
+  "equity": 10883.57,
+  "return_pct": 8.84,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-18T14:54:51.755865+00:00"
+  "updated_at": "2026-10-18T17:49:02.262000+00:00"
 }
