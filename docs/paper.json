@@ -1,5 +1,5 @@
 {
-  "cash": 370.7491885997458,
+  "cash": 591.4059060010866,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -43,12 +43,12 @@
     },
     "SENTUSDT": {
       "symbol": "SENTUSDT",
-      "entry": 0.0219,
-      "qty": 24552.92639733436,
-      "stop": 0.02116,
-      "target": 0.023379999999999995,
-      "atr_pct": 0.97,
-      "opened_at": "2026-10-18T21:57:22.266443+00:00",
+      "entry": 0.02364,
+      "qty": 15218.885898123668,
+      "stop": 0.02239,
+      "target": 0.026140000000000004,
+      "atr_pct": 1.0,
+      "opened_at": "2026-10-19T04:35:57.476832+00:00",
       "mode": "PAPER"
     }
   },
@@ -318,11 +318,25 @@
       "pnl": -22.85,
       "exit_reason": "STOP",
       "closed_at": "2026-10-18T17:49:01.922511+00:00"
+    },
+    {
+      "symbol": "SENTUSDT",
+      "entry": 0.0219,
+      "qty": 24552.92639733436,
+      "stop": 0.02116,
+      "target": 0.023379999999999995,
+      "atr_pct": 0.97,
+      "opened_at": "2026-10-18T21:57:22.266443+00:00",
+      "mode": "PAPER",
+      "exit": 0.02364,
+      "pnl": 42.72,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-10-19T04:35:57.476832+00:00"
     }
   ],
-  "equity": 10879.78,
-  "return_pct": 8.8,
+  "equity": 10955.31,
+  "return_pct": 9.55,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-19T00:07:05.363866+00:00"
+  "updated_at": "2026-10-19T04:35:58.262520+00:00"
 }
