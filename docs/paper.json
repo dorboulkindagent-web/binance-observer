@@ -1,5 +1,5 @@
 {
-  "cash": 1736.2265911968873,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -31,16 +31,6 @@
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     },
-    "SENTUSDT": {
-      "symbol": "SENTUSDT",
-      "entry": 0.02364,
-      "qty": 15218.885898123668,
-      "stop": 0.02239,
-      "target": 0.026140000000000004,
-      "atr_pct": 1.0,
-      "opened_at": "2026-10-19T04:35:57.476832+00:00",
-      "mode": "PAPER"
-    },
     "GTCUSDT": {
       "symbol": "GTCUSDT",
       "entry": 0.35363,
@@ -49,6 +39,16 @@
       "target": 0.39466999999999997,
       "atr_pct": 2.37,
       "opened_at": "2026-10-20T00:39:52.162980+00:00",
+      "mode": "PAPER"
+    },
+    "ASTERUSDT": {
+      "symbol": "ASTERUSDT",
+      "entry": 0.7116,
+      "qty": 2907.4078652752537,
+      "stop": 0.7013,
+      "target": 0.7322,
+      "atr_pct": 0.3,
+      "opened_at": "2026-10-20T05:25:22.290874+00:00",
       "mode": "PAPER"
     }
   },
@@ -346,11 +346,25 @@
       "pnl": -136.44,
       "exit_reason": "STOP",
       "closed_at": "2026-10-20T00:39:52.162980+00:00"
+    },
+    {
+      "symbol": "SENTUSDT",
+      "entry": 0.02364,
+      "qty": 15218.885898123668,
+      "stop": 0.02239,
+      "target": 0.026140000000000004,
+      "atr_pct": 1.0,
+      "opened_at": "2026-10-19T04:35:57.476832+00:00",
+      "mode": "PAPER",
+      "exit": 0.02186,
+      "pnl": -27.09,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-20T05:25:22.290874+00:00"
     }
   ],
-  "equity": 10818.86,
-  "return_pct": 8.19,
+  "equity": 10792.43,
+  "return_pct": 7.92,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-20T00:39:52.717879+00:00"
+  "updated_at": "2026-10-20T05:25:22.593384+00:00"
 }
