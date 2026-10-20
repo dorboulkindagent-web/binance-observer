@@ -1,5 +1,5 @@
 {
-  "cash": 1667.2079480918064,
+  "cash": 2498.8728026016483,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,16 +29,6 @@
       "target": 0.04311000000000001,
       "atr_pct": 1.18,
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
-      "mode": "PAPER"
-    },
-    "GTCUSDT": {
-      "symbol": "GTCUSDT",
-      "entry": 0.35363,
-      "qty": 2582.24874874978,
-      "stop": 0.33311,
-      "target": 0.39466999999999997,
-      "atr_pct": 2.37,
-      "opened_at": "2026-10-20T00:39:52.162980+00:00",
       "mode": "PAPER"
     },
     "BMTUSDT": {
@@ -374,11 +364,25 @@
       "pnl": -31.98,
       "exit_reason": "STOP",
       "closed_at": "2026-10-20T10:20:19.540390+00:00"
+    },
+    {
+      "symbol": "GTCUSDT",
+      "entry": 0.35363,
+      "qty": 2582.24874874978,
+      "stop": 0.33311,
+      "target": 0.39466999999999997,
+      "atr_pct": 2.37,
+      "opened_at": "2026-10-20T00:39:52.162980+00:00",
+      "mode": "PAPER",
+      "exit": 0.32207,
+      "pnl": -81.5,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-20T15:17:09.286946+00:00"
     }
   ],
-  "equity": 10761.1,
-  "return_pct": 7.61,
+  "equity": 10687.63,
+  "return_pct": 6.88,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-20T10:20:19.935382+00:00"
+  "updated_at": "2026-10-20T15:17:09.591562+00:00"
 }
