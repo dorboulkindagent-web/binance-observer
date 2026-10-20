@@ -1,5 +1,5 @@
 {
-  "cash": 2498.8728026016483,
+  "cash": 208.86101036669834,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.02348,
       "atr_pct": 2.27,
       "opened_at": "2026-10-20T10:20:19.540390+00:00",
+      "mode": "PAPER"
+    },
+    "LTCUSDT": {
+      "symbol": "LTCUSDT",
+      "entry": 61.4,
+      "qty": 37.29660899405456,
+      "stop": 60.06,
+      "target": 64.07999999999998,
+      "atr_pct": 0.41,
+      "opened_at": "2026-10-20T22:34:12.062802+00:00",
       "mode": "PAPER"
     }
   },
@@ -380,9 +390,9 @@
       "closed_at": "2026-10-20T15:17:09.286946+00:00"
     }
   ],
-  "equity": 10690.79,
-  "return_pct": 6.91,
+  "equity": 10679.21,
+  "return_pct": 6.79,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-20T19:24:33.948403+00:00"
+  "updated_at": "2026-10-20T22:34:12.395658+00:00"
 }
