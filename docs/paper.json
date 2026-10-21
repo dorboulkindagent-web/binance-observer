@@ -1,5 +1,5 @@
 {
-  "cash": 208.86101036669834,
+  "cash": 367.78946220929265,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -31,16 +31,6 @@
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     },
-    "BMTUSDT": {
-      "symbol": "BMTUSDT",
-      "entry": 0.01924,
-      "qty": 19216.320286904174,
-      "stop": 0.01712,
-      "target": 0.02348,
-      "atr_pct": 2.27,
-      "opened_at": "2026-10-20T10:20:19.540390+00:00",
-      "mode": "PAPER"
-    },
     "LTCUSDT": {
       "symbol": "LTCUSDT",
       "entry": 61.4,
@@ -49,6 +39,16 @@
       "target": 64.07999999999998,
       "atr_pct": 0.41,
       "opened_at": "2026-10-20T22:34:12.062802+00:00",
+      "mode": "PAPER"
+    },
+    "PROMUSDT": {
+      "symbol": "PROMUSDT",
+      "entry": 5.303,
+      "qty": 55.331647692085596,
+      "stop": 5.064,
+      "target": 5.781,
+      "atr_pct": 0.69,
+      "opened_at": "2026-10-21T10:40:11.493695+00:00",
       "mode": "PAPER"
     }
   },
@@ -388,11 +388,25 @@
       "pnl": -81.5,
       "exit_reason": "STOP",
       "closed_at": "2026-10-20T15:17:09.286946+00:00"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "entry": 0.01924,
+      "qty": 19216.320286904174,
+      "stop": 0.01712,
+      "target": 0.02348,
+      "atr_pct": 2.27,
+      "opened_at": "2026-10-20T10:20:19.540390+00:00",
+      "mode": "PAPER",
+      "exit": 0.02354,
+      "pnl": 82.63,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-10-21T10:40:11.493695+00:00"
     }
   ],
-  "equity": 10671.87,
-  "return_pct": 6.72,
+  "equity": 10770.91,
+  "return_pct": 7.71,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-21T05:45:00.733354+00:00"
+  "updated_at": "2026-10-21T10:40:13.736657+00:00"
 }
