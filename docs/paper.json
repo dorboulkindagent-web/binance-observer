@@ -1,5 +1,5 @@
 {
-  "cash": 2583.2080364561334,
+  "cash": 1439.6791232466821,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 5.781,
       "atr_pct": 0.69,
       "opened_at": "2026-10-21T10:40:11.493695+00:00",
+      "mode": "PAPER"
+    },
+    "DASHUSDT": {
+      "symbol": "DASHUSDT",
+      "entry": 52.9,
+      "qty": 21.616803652352576,
+      "stop": 50.51,
+      "target": 57.68,
+      "atr_pct": 1.21,
+      "opened_at": "2026-10-22T23:37:19.791410+00:00",
       "mode": "PAPER"
     }
   },
@@ -408,9 +418,9 @@
       "closed_at": "2026-10-22T12:03:05.559806+00:00"
     }
   ],
-  "equity": 10688.3,
-  "return_pct": 6.88,
+  "equity": 10684.37,
+  "return_pct": 6.84,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-22T20:35:22.656302+00:00"
+  "updated_at": "2026-10-22T23:37:20.468645+00:00"
 }
