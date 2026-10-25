@@ -1,5 +1,5 @@
 {
-  "cash": 1062.2078179794464,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-10-21T10:40:11.493695+00:00",
       "mode": "PAPER"
     },
-    "INITUSDT": {
-      "symbol": "INITUSDT",
-      "entry": 0.15092,
-      "qty": 9562.547875220102,
-      "stop": 0.14568,
-      "target": 0.1614,
-      "atr_pct": 1.19,
-      "opened_at": "2026-10-24T21:12:52.841137+00:00",
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 742.81,
+      "qty": 3.5571993226811918,
+      "stop": 735.3819,
+      "target": 757.6661999999999,
+      "atr_pct": 0.2,
+      "opened_at": "2026-10-25T19:02:55.750485+00:00",
       "mode": "PAPER"
     }
   },
@@ -430,11 +430,25 @@
       "pnl": -77.82,
       "exit_reason": "STOP",
       "closed_at": "2026-10-24T15:54:15.106863+00:00"
+    },
+    {
+      "symbol": "INITUSDT",
+      "entry": 0.15092,
+      "qty": 9562.547875220102,
+      "stop": 0.14568,
+      "target": 0.1614,
+      "atr_pct": 1.19,
+      "opened_at": "2026-10-24T21:12:52.841137+00:00",
+      "mode": "PAPER",
+      "exit": 0.16524,
+      "pnl": 136.94,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-10-25T19:02:55.750485+00:00"
     }
   ],
-  "equity": 10609.82,
-  "return_pct": 6.1,
+  "equity": 10746.76,
+  "return_pct": 7.47,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-25T16:08:35.415041+00:00"
+  "updated_at": "2026-10-25T19:02:56.123226+00:00"
 }
