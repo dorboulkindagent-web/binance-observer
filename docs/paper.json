@@ -1,5 +1,5 @@
 {
-  "cash": 0.0,
+  "cash": 2529.204290419554,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,16 +39,6 @@
       "target": 5.781,
       "atr_pct": 0.69,
       "opened_at": "2026-10-21T10:40:11.493695+00:00",
-      "mode": "PAPER"
-    },
-    "BNBUSDT": {
-      "symbol": "BNBUSDT",
-      "entry": 742.81,
-      "qty": 3.5571993226811918,
-      "stop": 735.3819,
-      "target": 757.6661999999999,
-      "atr_pct": 0.2,
-      "opened_at": "2026-10-25T19:02:55.750485+00:00",
       "mode": "PAPER"
     }
   },
@@ -444,11 +434,25 @@
       "pnl": 136.94,
       "exit_reason": "TARGET",
       "closed_at": "2026-10-25T19:02:55.750485+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "entry": 742.81,
+      "qty": 3.5571993226811918,
+      "stop": 735.3819,
+      "target": 757.6661999999999,
+      "atr_pct": 0.2,
+      "opened_at": "2026-10-25T19:02:55.750485+00:00",
+      "mode": "PAPER",
+      "exit": 711.01,
+      "pnl": -113.12,
+      "exit_reason": "STOP",
+      "closed_at": "2026-10-30T03:01:52.642396+00:00"
     }
   ],
-  "equity": 10749.38,
-  "return_pct": 7.49,
+  "equity": 10634.3,
+  "return_pct": 6.34,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-29T23:49:01.732573+00:00"
+  "updated_at": "2026-10-30T03:01:53.065699+00:00"
 }
