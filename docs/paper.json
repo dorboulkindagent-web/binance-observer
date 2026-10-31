@@ -1,5 +1,5 @@
 {
-  "cash": 0.0,
+  "cash": 2.2737367544323206e-13,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-10-31T00:45:46.978753+00:00",
       "mode": "PAPER"
     },
-    "ZROUSDT": {
-      "symbol": "ZROUSDT",
-      "entry": 1.711,
-      "qty": 857.736494112432,
-      "stop": 1.681,
-      "target": 1.7710000000000001,
-      "atr_pct": 0.86,
-      "opened_at": "2026-10-31T06:22:58.324840+00:00",
+    "LINKUSDT": {
+      "symbol": "LINKUSDT",
+      "entry": 11.687,
+      "qty": 131.2255370474055,
+      "stop": 11.486,
+      "target": 12.088999999999997,
+      "atr_pct": 0.4,
+      "opened_at": "2026-10-31T17:35:58.254695+00:00",
       "mode": "PAPER"
     }
   },
@@ -472,11 +472,25 @@
       "pnl": -16.82,
       "exit_reason": "STOP",
       "closed_at": "2026-10-31T06:22:58.324840+00:00"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "entry": 1.711,
+      "qty": 857.736494112432,
+      "stop": 1.681,
+      "target": 1.7710000000000001,
+      "atr_pct": 0.86,
+      "opened_at": "2026-10-31T06:22:58.324840+00:00",
+      "mode": "PAPER",
+      "exit": 1.788,
+      "pnl": 66.05,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-10-31T17:35:58.254695+00:00"
     }
   ],
-  "equity": 10593.67,
-  "return_pct": 5.94,
+  "equity": 10638.2,
+  "return_pct": 6.38,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-31T12:57:25.048524+00:00"
+  "updated_at": "2026-10-31T17:35:58.654327+00:00"
 }
