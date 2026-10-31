@@ -1,5 +1,5 @@
 {
-  "cash": 2529.204290419554,
+  "cash": 1190.9842346136352,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 5.781,
       "atr_pct": 0.69,
       "opened_at": "2026-10-21T10:40:11.493695+00:00",
+      "mode": "PAPER"
+    },
+    "BCHUSDT": {
+      "symbol": "BCHUSDT",
+      "entry": 296.3,
+      "qty": 4.516436232892065,
+      "stop": 285.1,
+      "target": 318.7,
+      "atr_pct": 0.57,
+      "opened_at": "2026-10-31T00:45:46.978753+00:00",
       "mode": "PAPER"
     }
   },
@@ -450,9 +460,9 @@
       "closed_at": "2026-10-30T03:01:52.642396+00:00"
     }
   ],
-  "equity": 10634.3,
-  "return_pct": 6.34,
+  "equity": 10630.37,
+  "return_pct": 6.3,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-10-30T21:04:50.538131+00:00"
+  "updated_at": "2026-10-31T00:45:47.554520+00:00"
 }
