@@ -1,5 +1,5 @@
 {
-  "cash": 1275.8932357920087,
+  "cash": 2439.503010590051,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -31,14 +31,14 @@
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     },
-    "LINKUSDT": {
-      "symbol": "LINKUSDT",
-      "entry": 11.687,
-      "qty": 131.2255370474055,
-      "stop": 11.486,
-      "target": 12.088999999999997,
-      "atr_pct": 0.4,
-      "opened_at": "2026-10-31T17:35:58.254695+00:00",
+    "BEAMXUSDT": {
+      "symbol": "BEAMXUSDT",
+      "entry": 0.005581,
+      "qty": 59763.90922340211,
+      "stop": 0.004653,
+      "target": 0.007437,
+      "atr_pct": 1.96,
+      "opened_at": "2026-11-01T21:16:41.880350+00:00",
       "mode": "PAPER"
     }
   },
@@ -490,11 +490,25 @@
       "pnl": -62.33,
       "exit_reason": "STOP",
       "closed_at": "2026-11-01T11:23:22.289755+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "entry": 11.687,
+      "qty": 131.2255370474055,
+      "stop": 11.486,
+      "target": 12.088999999999997,
+      "atr_pct": 0.4,
+      "opened_at": "2026-10-31T17:35:58.254695+00:00",
+      "mode": "PAPER",
+      "exit": 11.409,
+      "pnl": -36.48,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-01T21:16:41.880350+00:00"
     }
   ],
-  "equity": 10605.45,
-  "return_pct": 6.05,
+  "equity": 10582.75,
+  "return_pct": 5.83,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-01T17:15:23.482054+00:00"
+  "updated_at": "2026-11-01T21:16:42.381297+00:00"
 }
