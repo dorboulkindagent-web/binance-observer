@@ -1,5 +1,5 @@
 {
-  "cash": 2.2737367544323206e-13,
+  "cash": 1275.8932357920087,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,16 +29,6 @@
       "target": 0.04311000000000001,
       "atr_pct": 1.18,
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
-      "mode": "PAPER"
-    },
-    "BCHUSDT": {
-      "symbol": "BCHUSDT",
-      "entry": 296.3,
-      "qty": 4.516436232892065,
-      "stop": 285.1,
-      "target": 318.7,
-      "atr_pct": 0.57,
-      "opened_at": "2026-10-31T00:45:46.978753+00:00",
       "mode": "PAPER"
     },
     "LINKUSDT": {
@@ -486,11 +476,25 @@
       "pnl": 66.05,
       "exit_reason": "TARGET",
       "closed_at": "2026-10-31T17:35:58.254695+00:00"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "entry": 296.3,
+      "qty": 4.516436232892065,
+      "stop": 285.1,
+      "target": 318.7,
+      "atr_pct": 0.57,
+      "opened_at": "2026-10-31T00:45:46.978753+00:00",
+      "mode": "PAPER",
+      "exit": 282.5,
+      "pnl": -62.33,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-01T11:23:22.289755+00:00"
     }
   ],
-  "equity": 10627.14,
-  "return_pct": 6.27,
+  "equity": 10617.26,
+  "return_pct": 6.17,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-01T04:11:28.461664+00:00"
+  "updated_at": "2026-11-01T11:23:22.711957+00:00"
 }
