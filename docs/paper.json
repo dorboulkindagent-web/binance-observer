@@ -1,5 +1,5 @@
 {
-  "cash": 2439.503010590051,
+  "cash": 1304.3209429954832,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.007437,
       "atr_pct": 1.96,
       "opened_at": "2026-11-01T21:16:41.880350+00:00",
+      "mode": "PAPER"
+    },
+    "TRUMPUSDT": {
+      "symbol": "TRUMPUSDT",
+      "entry": 1.745,
+      "qty": 650.5341361573454,
+      "stop": 1.67,
+      "target": 1.8950000000000005,
+      "atr_pct": 1.23,
+      "opened_at": "2026-11-02T00:54:15.095747+00:00",
       "mode": "PAPER"
     }
   },
@@ -510,5 +520,5 @@
   "return_pct": 5.83,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-01T21:16:42.381297+00:00"
+  "updated_at": "2026-11-02T00:54:15.503677+00:00"
 }
