@@ -1,5 +1,5 @@
 {
-  "cash": 1304.3209429954832,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -31,16 +31,6 @@
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     },
-    "BEAMXUSDT": {
-      "symbol": "BEAMXUSDT",
-      "entry": 0.005581,
-      "qty": 59763.90922340211,
-      "stop": 0.004653,
-      "target": 0.007437,
-      "atr_pct": 1.96,
-      "opened_at": "2026-11-01T21:16:41.880350+00:00",
-      "mode": "PAPER"
-    },
     "TRUMPUSDT": {
       "symbol": "TRUMPUSDT",
       "entry": 1.745,
@@ -49,6 +39,16 @@
       "target": 1.8950000000000005,
       "atr_pct": 1.23,
       "opened_at": "2026-11-02T00:54:15.095747+00:00",
+      "mode": "PAPER"
+    },
+    "JSTUSDT": {
+      "symbol": "JSTUSDT",
+      "entry": 0.14028,
+      "qty": 11196.811280326392,
+      "stop": 0.13887719999999998,
+      "target": 0.1430856,
+      "atr_pct": 0.14,
+      "opened_at": "2026-11-02T23:56:44.393034+00:00",
       "mode": "PAPER"
     }
   },
@@ -514,11 +514,25 @@
       "pnl": -36.48,
       "exit_reason": "STOP",
       "closed_at": "2026-11-01T21:16:41.880350+00:00"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "entry": 0.005581,
+      "qty": 59763.90922340211,
+      "stop": 0.004653,
+      "target": 0.007437,
+      "atr_pct": 1.96,
+      "opened_at": "2026-11-01T21:16:41.880350+00:00",
+      "mode": "PAPER",
+      "exit": 0.004457,
+      "pnl": -67.17,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-02T23:56:44.393034+00:00"
     }
   ],
-  "equity": 10534.82,
-  "return_pct": 5.35,
+  "equity": 10518.85,
+  "return_pct": 5.19,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-02T17:13:06.814758+00:00"
+  "updated_at": "2026-11-02T23:56:45.017791+00:00"
 }
