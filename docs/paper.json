@@ -1,5 +1,5 @@
 {
-  "cash": 1033.6987423540218,
+  "cash": 618.6796940940137,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.1430856,
       "atr_pct": 0.14,
       "opened_at": "2026-11-02T23:56:44.393034+00:00",
+      "mode": "PAPER"
+    },
+    "ZROUSDT": {
+      "symbol": "ZROUSDT",
+      "entry": 1.887,
+      "qty": 219.9359026285151,
+      "stop": 1.793,
+      "target": 2.075,
+      "atr_pct": 1.32,
+      "opened_at": "2026-11-04T07:00:55.718102+00:00",
       "mode": "PAPER"
     }
   },
@@ -538,5 +548,5 @@
   "return_pct": 4.12,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-04T00:38:08.381928+00:00"
+  "updated_at": "2026-11-04T07:00:56.405022+00:00"
 }
