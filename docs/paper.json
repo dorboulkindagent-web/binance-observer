@@ -1,5 +1,5 @@
 {
-  "cash": 981.5739334310636,
+  "cash": 869.2006417417142,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.1430856,
       "atr_pct": 0.14,
       "opened_at": "2026-11-02T23:56:44.393034+00:00",
+      "mode": "PAPER"
+    },
+    "CYBERUSDT": {
+      "symbol": "CYBERUSDT",
+      "entry": 0.332,
+      "qty": 338.4737701486426,
+      "stop": 0.274,
+      "target": 0.448,
+      "atr_pct": 4.52,
+      "opened_at": "2026-11-06T02:51:32.198572+00:00",
       "mode": "PAPER"
     }
   },
@@ -552,5 +562,5 @@
   "return_pct": 3.65,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-05T22:32:30.599529+00:00"
+  "updated_at": "2026-11-06T02:51:32.646801+00:00"
 }
