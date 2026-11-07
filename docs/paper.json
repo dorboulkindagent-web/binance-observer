@@ -1,5 +1,5 @@
 {
-  "cash": 2475.4951880173385,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 0.448,
       "atr_pct": 4.52,
       "opened_at": "2026-11-06T02:51:32.198572+00:00",
+      "mode": "PAPER"
+    },
+    "JSTUSDT": {
+      "symbol": "JSTUSDT",
+      "entry": 0.14392,
+      "qty": 17200.49463602931,
+      "stop": 0.1424808,
+      "target": 0.1467984,
+      "atr_pct": 0.11,
+      "opened_at": "2026-11-07T23:02:49.157868+00:00",
       "mode": "PAPER"
     }
   },
@@ -566,5 +576,5 @@
   "return_pct": 3.99,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-07T19:39:03.406097+00:00"
+  "updated_at": "2026-11-07T23:02:49.636014+00:00"
 }
