@@ -1,5 +1,5 @@
 {
-  "cash": 869.2006417417142,
+  "cash": 2475.4951880173385,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,16 +29,6 @@
       "target": 0.04311000000000001,
       "atr_pct": 1.18,
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
-      "mode": "PAPER"
-    },
-    "JSTUSDT": {
-      "symbol": "JSTUSDT",
-      "entry": 0.14028,
-      "qty": 11196.811280326392,
-      "stop": 0.13887719999999998,
-      "target": 0.1430856,
-      "atr_pct": 0.14,
-      "opened_at": "2026-11-02T23:56:44.393034+00:00",
       "mode": "PAPER"
     },
     "CYBERUSDT": {
@@ -556,11 +546,25 @@
       "pnl": -52.12,
       "exit_reason": "STOP",
       "closed_at": "2026-11-05T16:50:07.842060+00:00"
+    },
+    {
+      "symbol": "JSTUSDT",
+      "entry": 0.14028,
+      "qty": 11196.811280326392,
+      "stop": 0.13887719999999998,
+      "target": 0.1430856,
+      "atr_pct": 0.14,
+      "opened_at": "2026-11-02T23:56:44.393034+00:00",
+      "mode": "PAPER",
+      "exit": 0.14346,
+      "pnl": 35.61,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-11-07T15:39:35.646629+00:00"
     }
   ],
-  "equity": 10374.2,
-  "return_pct": 3.74,
+  "equity": 10398.88,
+  "return_pct": 3.99,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-07T08:59:46.191913+00:00"
+  "updated_at": "2026-11-07T15:39:36.099579+00:00"
 }
