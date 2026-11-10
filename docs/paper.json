@@ -1,5 +1,5 @@
 {
-  "cash": 2543.296283815824,
+  "cash": 0.0,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -29,6 +29,26 @@
       "target": 0.04311000000000001,
       "atr_pct": 1.18,
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
+      "mode": "PAPER"
+    },
+    "SOXLBUSDT": {
+      "symbol": "SOXLBUSDT",
+      "entry": 57.52,
+      "qty": 18.97982301355093,
+      "stop": 54.84,
+      "target": 62.88,
+      "atr_pct": 1.07,
+      "opened_at": "2026-11-10T00:27:44.591488+00:00",
+      "mode": "PAPER"
+    },
+    "QQQBUSDT": {
+      "symbol": "QQQBUSDT",
+      "entry": 681.03,
+      "qty": 2.131443349156975,
+      "stop": 674.2197,
+      "target": 694.6505999999999,
+      "atr_pct": 0.12,
+      "opened_at": "2026-11-10T00:27:44.591488+00:00",
       "mode": "PAPER"
     }
   },
@@ -580,9 +600,9 @@
       "closed_at": "2026-11-08T23:59:36.921393+00:00"
     }
   ],
-  "equity": 10352.34,
-  "return_pct": 3.52,
+  "equity": 10353.0,
+  "return_pct": 3.53,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-09T16:33:16.470096+00:00"
+  "updated_at": "2026-11-10T00:27:45.151369+00:00"
 }
