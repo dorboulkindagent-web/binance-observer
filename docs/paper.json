@@ -1,5 +1,5 @@
 {
-  "cash": 1137.1126021098814,
+  "cash": 570.6127812927989,
   "positions": {
     "HOMEUSDT": {
       "symbol": "HOMEUSDT",
@@ -39,6 +39,16 @@
       "target": 694.6505999999999,
       "atr_pct": 0.12,
       "opened_at": "2026-11-10T00:27:44.591488+00:00",
+      "mode": "PAPER"
+    },
+    "NIGHTUSDT": {
+      "symbol": "NIGHTUSDT",
+      "entry": 0.04683,
+      "qty": 12096.94257563704,
+      "stop": 0.04495,
+      "target": 0.050589999999999996,
+      "atr_pct": 0.84,
+      "opened_at": "2026-11-13T21:39:05.048763+00:00",
       "mode": "PAPER"
     }
   },
@@ -618,9 +628,9 @@
       "closed_at": "2026-11-13T15:38:47.752427+00:00"
     }
   ],
-  "equity": 10385.71,
-  "return_pct": 3.86,
+  "equity": 10388.2,
+  "return_pct": 3.88,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-13T15:38:48.546656+00:00"
+  "updated_at": "2026-11-13T21:39:06.303928+00:00"
 }
