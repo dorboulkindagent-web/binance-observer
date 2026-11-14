@@ -632,9 +632,9 @@
       "closed_at": "2026-11-14T15:22:31.006226+00:00"
     }
   ],
-  "equity": 10420.28,
-  "return_pct": 4.2,
+  "equity": 10391.0,
+  "return_pct": 3.91,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-14T15:22:31.583882+00:00"
+  "updated_at": "2026-11-14T20:02:28.086761+00:00"
 }
