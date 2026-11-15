@@ -1,5 +1,5 @@
 {
-  "cash": 2465.564387245749,
+  "cash": 1493.8419522724244,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -29,6 +29,16 @@
       "target": 0.050589999999999996,
       "atr_pct": 0.84,
       "opened_at": "2026-11-13T21:39:05.048763+00:00",
+      "mode": "PAPER"
+    },
+    "JUPUSDT": {
+      "symbol": "JUPUSDT",
+      "entry": 0.268,
+      "qty": 3625.829981243748,
+      "stop": 0.2544,
+      "target": 0.2952,
+      "atr_pct": 1.06,
+      "opened_at": "2026-11-15T12:21:49.572802+00:00",
       "mode": "PAPER"
     }
   },
@@ -636,9 +646,9 @@
       "closed_at": "2026-11-15T04:42:35.743392+00:00"
     }
   ],
-  "equity": 10188.88,
-  "return_pct": 1.89,
+  "equity": 10151.38,
+  "return_pct": 1.51,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-15T04:42:36.256504+00:00"
+  "updated_at": "2026-11-15T12:21:50.133032+00:00"
 }
