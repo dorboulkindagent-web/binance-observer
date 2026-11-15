@@ -1,16 +1,6 @@
 {
-  "cash": 2005.5643872457492,
+  "cash": 2465.564387245749,
   "positions": {
-    "HOMEUSDT": {
-      "symbol": "HOMEUSDT",
-      "entry": 0.00654,
-      "qty": 105263.15789473681,
-      "stop": 0.00616,
-      "target": 0.0073,
-      "atr_pct": 0.93,
-      "opened_at": "2026-09-19T20:26:41.492146+00:00",
-      "mode": "PAPER"
-    },
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
       "entry": 1.0008,
@@ -630,11 +620,25 @@
       "pnl": -16.63,
       "exit_reason": "STOP",
       "closed_at": "2026-11-14T15:22:31.006226+00:00"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "entry": 0.00654,
+      "qty": 105263.15789473681,
+      "stop": 0.00616,
+      "target": 0.0073,
+      "atr_pct": 0.93,
+      "opened_at": "2026-09-19T20:26:41.492146+00:00",
+      "mode": "PAPER",
+      "exit": 0.00437,
+      "pnl": -228.42,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-15T04:42:35.743392+00:00"
     }
   ],
-  "equity": 10375.78,
-  "return_pct": 3.76,
+  "equity": 10188.88,
+  "return_pct": 1.89,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-14T23:52:15.976227+00:00"
+  "updated_at": "2026-11-15T04:42:36.256504+00:00"
 }
