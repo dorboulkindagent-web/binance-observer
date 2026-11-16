@@ -1,5 +1,5 @@
 {
-  "cash": 1381.9727924981771,
+  "cash": 2277.9153808635074,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -29,16 +29,6 @@
       "target": 0.050589999999999996,
       "atr_pct": 0.84,
       "opened_at": "2026-11-13T21:39:05.048763+00:00",
-      "mode": "PAPER"
-    },
-    "JUPUSDT": {
-      "symbol": "JUPUSDT",
-      "entry": 0.268,
-      "qty": 3625.829981243748,
-      "stop": 0.2544,
-      "target": 0.2952,
-      "atr_pct": 1.06,
-      "opened_at": "2026-11-15T12:21:49.572802+00:00",
       "mode": "PAPER"
     },
     "SHELLUSDT": {
@@ -654,11 +644,25 @@
       "pnl": -228.42,
       "exit_reason": "STOP",
       "closed_at": "2026-11-15T04:42:35.743392+00:00"
+    },
+    {
+      "symbol": "JUPUSDT",
+      "entry": 0.268,
+      "qty": 3625.829981243748,
+      "stop": 0.2544,
+      "target": 0.2952,
+      "atr_pct": 1.06,
+      "opened_at": "2026-11-15T12:21:49.572802+00:00",
+      "mode": "PAPER",
+      "exit": 0.2471,
+      "pnl": -75.78,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-16T20:49:14.016803+00:00"
     }
   ],
-  "equity": 10129.68,
-  "return_pct": 1.3,
+  "equity": 10051.4,
+  "return_pct": 0.51,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-16T10:54:40.168516+00:00"
+  "updated_at": "2026-11-16T20:49:14.564013+00:00"
 }
