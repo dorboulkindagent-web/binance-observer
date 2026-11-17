@@ -1,5 +1,5 @@
 {
-  "cash": 2277.9153808635074,
+  "cash": 684.7764083395834,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -39,6 +39,16 @@
       "target": 0.05077999999999999,
       "atr_pct": 4.34,
       "opened_at": "2026-11-15T19:03:06.129938+00:00",
+      "mode": "PAPER"
+    },
+    "AAVEUSDT": {
+      "symbol": "AAVEUSDT",
+      "entry": 113.65,
+      "qty": 14.017940805313891,
+      "stop": 110.4,
+      "target": 120.15,
+      "atr_pct": 0.72,
+      "opened_at": "2026-11-17T12:08:29.366064+00:00",
       "mode": "PAPER"
     }
   },
@@ -660,9 +670,9 @@
       "closed_at": "2026-11-16T20:49:14.016803+00:00"
     }
   ],
-  "equity": 10081.03,
-  "return_pct": 0.81,
+  "equity": 10054.11,
+  "return_pct": 0.54,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-17T03:18:06.080591+00:00"
+  "updated_at": "2026-11-17T12:08:30.041048+00:00"
 }
