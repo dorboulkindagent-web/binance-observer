@@ -1,5 +1,5 @@
 {
-  "cash": 684.7764083395834,
+  "cash": 905.591424957345,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -21,16 +21,6 @@
       "opened_at": "2026-10-17T02:58:31.305987+00:00",
       "mode": "PAPER"
     },
-    "NIGHTUSDT": {
-      "symbol": "NIGHTUSDT",
-      "entry": 0.04683,
-      "qty": 12096.94257563704,
-      "stop": 0.04495,
-      "target": 0.050589999999999996,
-      "atr_pct": 0.84,
-      "opened_at": "2026-11-13T21:39:05.048763+00:00",
-      "mode": "PAPER"
-    },
     "SHELLUSDT": {
       "symbol": "SHELLUSDT",
       "entry": 0.0331,
@@ -49,6 +39,16 @@
       "target": 120.15,
       "atr_pct": 0.72,
       "opened_at": "2026-11-17T12:08:29.366064+00:00",
+      "mode": "PAPER"
+    },
+    "MMTUSDT": {
+      "symbol": "MMTUSDT",
+      "entry": 0.1443,
+      "qty": 2178.4734783674367,
+      "stop": 0.1331,
+      "target": 0.16670000000000004,
+      "atr_pct": 3.11,
+      "opened_at": "2026-11-18T02:44:53.839745+00:00",
       "mode": "PAPER"
     }
   },
@@ -668,11 +668,25 @@
       "pnl": -75.78,
       "exit_reason": "STOP",
       "closed_at": "2026-11-16T20:49:14.016803+00:00"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "entry": 0.04683,
+      "qty": 12096.94257563704,
+      "stop": 0.04495,
+      "target": 0.050589999999999996,
+      "atr_pct": 0.84,
+      "opened_at": "2026-11-13T21:39:05.048763+00:00",
+      "mode": "PAPER",
+      "exit": 0.04424,
+      "pnl": -31.33,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-18T02:44:53.839745+00:00"
     }
   ],
-  "equity": 10011.16,
-  "return_pct": 0.11,
+  "equity": 10024.73,
+  "return_pct": 0.25,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-17T20:52:32.009215+00:00"
+  "updated_at": "2026-11-18T02:44:54.458957+00:00"
 }
