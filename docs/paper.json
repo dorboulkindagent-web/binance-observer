@@ -1,5 +1,5 @@
 {
-  "cash": 905.591424957345,
+  "cash": 1595.0952330272808,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -31,24 +31,14 @@
       "opened_at": "2026-11-15T19:03:06.129938+00:00",
       "mode": "PAPER"
     },
-    "AAVEUSDT": {
-      "symbol": "AAVEUSDT",
-      "entry": 113.65,
-      "qty": 14.017940805313891,
-      "stop": 110.4,
-      "target": 120.15,
-      "atr_pct": 0.72,
-      "opened_at": "2026-11-17T12:08:29.366064+00:00",
-      "mode": "PAPER"
-    },
-    "MMTUSDT": {
-      "symbol": "MMTUSDT",
-      "entry": 0.1443,
-      "qty": 2178.4734783674367,
-      "stop": 0.1331,
-      "target": 0.16670000000000004,
-      "atr_pct": 3.11,
-      "opened_at": "2026-11-18T02:44:53.839745+00:00",
+    "AVGOBUSDT": {
+      "symbol": "AVGOBUSDT",
+      "entry": 356.68,
+      "qty": 3.8314162976251076,
+      "stop": 341.22,
+      "target": 387.59999999999997,
+      "atr_pct": 0.85,
+      "opened_at": "2026-11-18T19:10:26.017763+00:00",
       "mode": "PAPER"
     }
   },
@@ -682,11 +672,39 @@
       "pnl": -31.33,
       "exit_reason": "STOP",
       "closed_at": "2026-11-18T02:44:53.839745+00:00"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "entry": 113.65,
+      "qty": 14.017940805313891,
+      "stop": 110.4,
+      "target": 120.15,
+      "atr_pct": 0.72,
+      "opened_at": "2026-11-17T12:08:29.366064+00:00",
+      "mode": "PAPER",
+      "exit": 107.7,
+      "pnl": -83.41,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-18T19:10:26.017763+00:00"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "entry": 0.1443,
+      "qty": 2178.4734783674367,
+      "stop": 0.1331,
+      "target": 0.16670000000000004,
+      "atr_pct": 3.11,
+      "opened_at": "2026-11-18T02:44:53.839745+00:00",
+      "mode": "PAPER",
+      "exit": 0.2508,
+      "pnl": 232.01,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-11-18T19:10:26.017763+00:00"
     }
   ],
-  "equity": 10005.44,
-  "return_pct": 0.05,
+  "equity": 10171.6,
+  "return_pct": 1.72,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-18T10:48:59.207154+00:00"
+  "updated_at": "2026-11-18T19:10:26.510950+00:00"
 }
