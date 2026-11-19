@@ -1,5 +1,5 @@
 {
-  "cash": 1595.0952330272808,
+  "cash": 0.0,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -39,6 +39,16 @@
       "target": 387.59999999999997,
       "atr_pct": 0.85,
       "opened_at": "2026-11-18T19:10:26.017763+00:00",
+      "mode": "PAPER"
+    },
+    "RWUSDUSDT": {
+      "symbol": "RWUSDUSDT",
+      "entry": 1.0,
+      "qty": 1595.0952330272808,
+      "stop": 0.99,
+      "target": 1.02,
+      "atr_pct": 0.02,
+      "opened_at": "2026-11-19T01:19:22.533558+00:00",
       "mode": "PAPER"
     }
   },
@@ -702,9 +712,9 @@
       "closed_at": "2026-11-18T19:10:26.017763+00:00"
     }
   ],
-  "equity": 10171.6,
-  "return_pct": 1.72,
+  "equity": 10195.49,
+  "return_pct": 1.95,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-18T19:10:26.510950+00:00"
+  "updated_at": "2026-11-19T01:19:23.045162+00:00"
 }
