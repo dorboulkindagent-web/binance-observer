@@ -1,5 +1,5 @@
 {
-  "cash": 787.3144590831569,
+  "cash": 1054.4459465853392,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-11-19T01:19:22.533558+00:00",
       "mode": "PAPER"
     },
-    "SOXSBUSDT": {
-      "symbol": "SOXSBUSDT",
-      "entry": 68.33,
-      "qty": 7.415601950486566,
-      "stop": 64.84,
-      "target": 75.30999999999999,
-      "atr_pct": 1.35,
-      "opened_at": "2026-11-20T07:46:12.035347+00:00",
+    "MMTUSDT": {
+      "symbol": "MMTUSDT",
+      "entry": 0.2694,
+      "qty": 1086.385685746282,
+      "stop": 0.2446,
+      "target": 0.3189999999999999,
+      "atr_pct": 1.79,
+      "opened_at": "2026-11-20T22:49:19.457552+00:00",
       "mode": "PAPER"
     }
   },
@@ -724,11 +724,25 @@
       "pnl": -72.57,
       "exit_reason": "STOP",
       "closed_at": "2026-11-20T07:46:12.035347+00:00"
+    },
+    {
+      "symbol": "SOXSBUSDT",
+      "entry": 68.33,
+      "qty": 7.415601950486566,
+      "stop": 64.84,
+      "target": 75.30999999999999,
+      "atr_pct": 1.35,
+      "opened_at": "2026-11-20T07:46:12.035347+00:00",
+      "mode": "PAPER",
+      "exit": 75.49,
+      "pnl": 53.1,
+      "exit_reason": "TARGET",
+      "closed_at": "2026-11-20T22:49:19.457552+00:00"
     }
   ],
-  "equity": 10173.56,
-  "return_pct": 1.74,
+  "equity": 10181.26,
+  "return_pct": 1.81,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-20T16:27:00.242177+00:00"
+  "updated_at": "2026-11-20T22:49:21.435882+00:00"
 }
