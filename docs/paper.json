@@ -1,5 +1,5 @@
 {
-  "cash": 0.0,
+  "cash": 787.3144590831569,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -31,16 +31,6 @@
       "opened_at": "2026-11-15T19:03:06.129938+00:00",
       "mode": "PAPER"
     },
-    "AVGOBUSDT": {
-      "symbol": "AVGOBUSDT",
-      "entry": 356.68,
-      "qty": 3.8314162976251076,
-      "stop": 341.22,
-      "target": 387.59999999999997,
-      "atr_pct": 0.85,
-      "opened_at": "2026-11-18T19:10:26.017763+00:00",
-      "mode": "PAPER"
-    },
     "RWUSDUSDT": {
       "symbol": "RWUSDUSDT",
       "entry": 1.0,
@@ -49,6 +39,16 @@
       "target": 1.02,
       "atr_pct": 0.02,
       "opened_at": "2026-11-19T01:19:22.533558+00:00",
+      "mode": "PAPER"
+    },
+    "SOXSBUSDT": {
+      "symbol": "SOXSBUSDT",
+      "entry": 68.33,
+      "qty": 7.415601950486566,
+      "stop": 64.84,
+      "target": 75.30999999999999,
+      "atr_pct": 1.35,
+      "opened_at": "2026-11-20T07:46:12.035347+00:00",
       "mode": "PAPER"
     }
   },
@@ -710,11 +710,25 @@
       "pnl": 232.01,
       "exit_reason": "TARGET",
       "closed_at": "2026-11-18T19:10:26.017763+00:00"
+    },
+    {
+      "symbol": "AVGOBUSDT",
+      "entry": 356.68,
+      "qty": 3.8314162976251076,
+      "stop": 341.22,
+      "target": 387.59999999999997,
+      "atr_pct": 0.85,
+      "opened_at": "2026-11-18T19:10:26.017763+00:00",
+      "mode": "PAPER",
+      "exit": 337.74,
+      "pnl": -72.57,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-20T07:46:12.035347+00:00"
     }
   ],
-  "equity": 10195.0,
-  "return_pct": 1.95,
+  "equity": 10121.61,
+  "return_pct": 1.22,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-20T00:36:42.407839+00:00"
+  "updated_at": "2026-11-20T07:46:12.542165+00:00"
 }
