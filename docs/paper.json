@@ -1,5 +1,5 @@
 {
-  "cash": 1054.4459465853392,
+  "cash": 1052.7322507650524,
   "positions": {
     "RLUSDUSDT": {
       "symbol": "RLUSDUSDT",
@@ -41,14 +41,14 @@
       "opened_at": "2026-11-19T01:19:22.533558+00:00",
       "mode": "PAPER"
     },
-    "MMTUSDT": {
-      "symbol": "MMTUSDT",
-      "entry": 0.2694,
-      "qty": 1086.385685746282,
-      "stop": 0.2446,
-      "target": 0.3189999999999999,
-      "atr_pct": 1.79,
-      "opened_at": "2026-11-20T22:49:19.457552+00:00",
+    "RAREUSDT": {
+      "symbol": "RAREUSDT",
+      "entry": 0.01494,
+      "qty": 16963.136493152637,
+      "stop": 0.0134,
+      "target": 0.01802,
+      "atr_pct": 3.89,
+      "opened_at": "2026-11-21T11:46:38.996632+00:00",
       "mode": "PAPER"
     }
   },
@@ -738,11 +738,25 @@
       "pnl": 53.1,
       "exit_reason": "TARGET",
       "closed_at": "2026-11-20T22:49:19.457552+00:00"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "entry": 0.2694,
+      "qty": 1086.385685746282,
+      "stop": 0.2446,
+      "target": 0.3189999999999999,
+      "atr_pct": 1.79,
+      "opened_at": "2026-11-20T22:49:19.457552+00:00",
+      "mode": "PAPER",
+      "exit": 0.2317,
+      "pnl": -40.96,
+      "exit_reason": "STOP",
+      "closed_at": "2026-11-21T11:46:38.996632+00:00"
     }
   ],
-  "equity": 10179.3,
-  "return_pct": 1.79,
+  "equity": 10137.68,
+  "return_pct": 1.38,
   "mode": "PAPER_ONLY",
   "real_execution": "DISABLED",
-  "updated_at": "2026-11-21T03:35:42.211524+00:00"
+  "updated_at": "2026-11-21T11:46:39.550622+00:00"
 }
